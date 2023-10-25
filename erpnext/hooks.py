@@ -27,7 +27,11 @@ doctype_js = {
 	"Newsletter": "public/js/newsletter.js",
 	"Contact": "public/js/contact.js",
 }
+brand_html = "<img src='/assets/erpnext/images/erpnext-logo.svg' />"
 
+website_context = {
+    "splash_image": "/assets/erpnext/images/erpnext-logo.png",
+}
 override_doctype_class = {"Address": "erpnext.accounts.custom.address.ERPNextAddress"}
 
 welcome_email = "erpnext.setup.utils.welcome_email"

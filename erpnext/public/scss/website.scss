@@ -1,5 +1,61 @@
 @import './order-page';
 
+:root {
+	/* Global colour variables */
+	--ug-nude: #f1ede3;
+	--ug-green: #154734;
+	--light: #FFFEF6;
+	--dark: #102E46;
+	/* Override Frappe Desk global colours with new colours */
+	--text-color: var(--ug-green) !important;
+	--heading-color: var(--ug-green) !important;
+	--icon-stroke: var(--ug-green) !important;
+	--text-light: var(--dark) !important;
+}
+
+.for-login .page-card,
+.for-forgot .page-card,
+.for-login-with-email-link .page-card,
+.for-signup .page-card,
+.for-email-login .page-card {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: var(--ug-nude) !important;
+    box-shadow: var(--shadow-base);
+  }
+  
+body {
+	
+		background-color: var(--ug-nude) !important;
+	
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	color: #000000;
+}
+html {
+	background-color: #f1ede3;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--text-light);
+	background-color: #f1ede3;
+
+	&.full-width {
+	
+		.container {
+				width: 90%;
+				max-width: 100%;
+			}
+		
+	}
+}
+
+
 .filter-options {
 	max-height: 300px;
 	overflow: auto;
@@ -89,3 +145,45 @@
 		margin-top: 1rem;
 	}
 }
+.navbar-light .navbar-toggler .icon {
+    stroke: #f1ede3;
+}
+.navbar-light {
+	border-bottom: 1px solid #154734;
+	background: #154734;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgb(253, 253, 231);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f1ede3;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #3dfa6c;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.btn.btn-primary {
+	background-color: var(--ug-green);
+	color: #f1ede3;
+	white-space: nowrap;
+	--icon-stroke: currentColor;
+	--icon-fill-bg: var(--ug-green);
+}
+.text-muted {
+    color: #248106 !important;
+}
+.sidebar-item a.active {
+    color: #f1ede3;
+    background-color: #154734;
+}
+
+.web-footer {
+	padding: 3rem 0;
+	min-height: 140px;
+	background-color: var(--ug-nude);
+}
+
