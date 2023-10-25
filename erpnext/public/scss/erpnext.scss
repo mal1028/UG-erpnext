@@ -76,6 +76,13 @@
 }
 
 /* pos */
+html, body {
+	background-color: #f1ede3 !important;
+}
+.page-head.drop-shadow {
+    box-shadow: var(--shadow-sm);
+    background-color: #f1ede3 !important;
+}
 
 body[data-route="pos"] {
 
@@ -495,18 +502,18 @@ body[data-route="pos"] {
     --ug-nude: #f1ede3;
     --ug-green: #154734;
     --ug-login: #f7f6f3;
-}
-
-body {
-    background-color: #f1ede3;
+	--light: #FFFEF6;
+		--dark: #102E46;
+	    /* Override Frappe Desk global colours with new colours */
+		--text-color: var(--ug-green) !important;
+		--heading-color: var(--ug-green) !important;
+		--icon-stroke: var(--dark) !important;
+		--text-light: var(--ug-green) !important;
+	
 }
 
 .navbar {
     background-color: var(--ug-green);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #FFFFFF;
 }
 
 .navbar-light .navbar-nav .nav-link:focus { 
@@ -517,45 +524,10 @@ body {
     color: var(--ug-nude);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--ug-nude);
-}
+
 .navbar-toggler {
     color: var(--ug-nude);
 }
-.for-login .page-card, .for-forgot .page-card, .for-login-with-email-link .page-card, .for-signup .page-card, .for-email-login .page-card {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    background-color: #ffffff00;
-    box-shadow: var(--shadow-base);
-}
-.page-card-body 
-    {
-        /* border: chartreuse; */
-        font-size: var(--text-base);
-        background-color: #f7f6f3;
-        margin-bottom: 1rem;
-    }
-
-.page-card-head h4, .for-signup .page-card-head h4 {
-        
-            margin-top: 1rem;
-            font-size: var(--text-xl);
-            color: #154734;
-        
-    }
-	:root {
-		/* Global colour variables */
-		--ug-nude: #f1ede3;
-		--ug-green: #154734;
-		--light: #FFFEF6;
-		--dark: #102E46;
-		/* Override Frappe Desk global colours with new colours */
-		--text-color: var(--ug-green) !important;
-		--heading-color: var(--ug-green) !important;
-		--icon-stroke: var(--ug-green) !important;
-		--text-light: var(--dark) !important;
-	}
 	
 	.navbar {
 		background-color: var(--ug-green);
@@ -572,6 +544,7 @@ body {
 	.btn.btn-primary {
 		background-color: var(--ug-green);
 	}
+	
 	
 	.desk-sidebar .standard-sidebar-item.selected{
 		background-color: var(--ug-green);
