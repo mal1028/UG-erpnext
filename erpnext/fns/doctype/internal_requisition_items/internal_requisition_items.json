@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-10 01:22:51.733666",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "des_of_stock",
+  "quantity_req"
+ ],
+ "fields": [
+  {
+   "fieldname": "des_of_stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description of stock",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity_req",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity Required",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-10 02:58:42.058676",
+ "modified_by": "Administrator",
+ "module": "FNS",
+ "name": "Internal Requisition items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
