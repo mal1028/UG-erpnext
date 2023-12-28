@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-12-10 01:22:51.733666",
+ "creation": "2023-12-12 12:34:28.261048",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -16,6 +16,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Description of Stock",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -23,24 +24,27 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Quantity Required",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "uom",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "UOM",
-   "options": "UOM",
+   "read_only": 1,
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-12 12:08:54.524670",
+ "modified": "2023-12-16 00:38:52.624645",
  "modified_by": "Administrator",
  "module": "FNS",
- "name": "Internal Requisition items",
+ "name": "Faculty Items",
+ "nsm_parent_field": "parent_faculty_items",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
