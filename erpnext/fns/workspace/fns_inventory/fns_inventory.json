@@ -15,6 +15,7 @@
  "icon": "list",
  "idx": 0,
  "is_hidden": 0,
+ "is_default": 1,
  "label": "FNS Inventory",
  "links": [
   {
