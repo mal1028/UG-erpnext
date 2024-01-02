@@ -12,7 +12,7 @@
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "stock",
+ "icon": "list",
  "idx": 0,
  "is_hidden": 0,
  "label": "FNS Inventory",
@@ -76,7 +76,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-12-10 03:02:17.819762",
+ "modified": "2023-12-29 09:58:29.481999",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "FNS Inventory",
