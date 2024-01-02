@@ -12,36 +12,3 @@ frappe.ui.form.on('Internal Requisition', {
         }
     }
 });
-
-function copyDataToFacultyItems(frm) {
-   
-    var childTableFieldNames = ['des_of_stock', 'quantity_req', 'uom'];
-    var facultyItemsTable = frm.fields_dict.faculty_items.grid;
-
-   
-    facultyItemsTable.remove_all();
-    childTableFieldNames.forEach(function(childTableName) {
-      
-        var internalItemsField = frm.fields_dict.internal_requisition_items[childTableName];
-
-        
-        if (internalItemsField) {
-            
-            for (var i = 0; i < internalItemsField.grid.get_data().length; i++) {
-                var row = internalItemsField.grid.get_data()[i];
-                var newRow = frm.add_child('faculty_items');
-
-              
-                newRow.des_of_stock = row.des_of_stock;
-                newRow.quantity_req = row.quantity_req;
-                newRow.uom = row.uom;
-
-
-                newRow.quantity_issued = 0; 
-                newRow.remarks = '';
-            }
-        }
-    });
-
-    frm.fields_dict.faculty_items.refresh();
-}

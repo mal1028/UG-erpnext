@@ -16,5 +16,14 @@
   "name": "Stock Issued",
   "style": "Success",
   "workflow_state_name": "Stock Issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-12-11 01:13:58.322731",
+  "name": "Draft",
+  "style": "Success",
+  "workflow_state_name": "Draft"
  }
 ]

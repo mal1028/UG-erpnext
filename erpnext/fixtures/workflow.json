@@ -11,7 +11,6 @@
   "states": [
    {
     "allow_edit": "CS Secretary",
-    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -25,7 +24,6 @@
    },
    {
     "allow_edit": "CS HOD",
-    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -39,7 +37,6 @@
    },
    {
     "allow_edit": "Faculty Office",
-    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -53,7 +50,6 @@
    },
    {
     "allow_edit": "CS Secretary",
-    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -67,7 +63,6 @@
    },
    {
     "allow_edit": "Faculty Office",
-    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,

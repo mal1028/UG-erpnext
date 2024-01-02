@@ -9,14 +9,18 @@
  "idx": 0,
  "is_public": 1,
  "is_standard": 1,
- "last_synced_on": "2023-12-10 21:21:49.431847",
- "modified": "2023-12-10 21:22:32.814524",
+ "last_synced_on": "2024-01-02 10:11:53.749382",
+ "modified": "2024-01-02 10:12:37.231966",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse wise Stock Value",
  "number_of_groups": 0,
  "owner": "Administrator",
- "roles": [],
+ "roles": [
+  {
+   "role": "Faculty Office"
+  }
+ ],
  "source": "Warehouse wise Stock Value",
  "timeseries": 0,
  "type": "Bar",

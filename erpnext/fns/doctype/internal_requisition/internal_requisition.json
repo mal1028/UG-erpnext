@@ -90,8 +90,8 @@
    "depends_on": "eval:doc.workflow_state==\"Endorsed\"",
    "description": "Please Issue quantity.",
    "fieldname": "clb1",
-   "fieldtype": "Section Break",
-   "label": "<h3>Faculty Office Section</h3>"
+   "fieldtype": "Tab Break",
+   "label": "Faculty Office Section"
   },
   {
    "fieldname": "internal_requisition_items",
@@ -116,7 +116,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-12-15 16:33:41.359909",
+ "modified": "2024-01-02 14:44:46.250345",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "Internal Requisition",

@@ -641,6 +641,9 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
+    'Warehouse',
+    'Location',
+    
     {
         "doctype": "Workflow",
         "filters": {
@@ -655,7 +658,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Endorsed, Stock Issued"		
+                "Endorsed, Stock Issued, Draft"		
 ]
 
 		}
@@ -665,7 +668,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "CS Secretary, CS HOD, Faculty Office"
+                "CS Secretary, CS HOD, Faculty Office, Employee"
                   ]
         },
     },
@@ -678,4 +681,24 @@ fixtures = [
                   ]
         },
     },
+      
+    {
+        "doctype": "Fiscal Year",
+        "filters": {
+            "name": [
+                "in",
+                "2024"
+                  ]
+        },
+    },
+      {
+        "doctype": "Location",
+        "filters": {
+            "name": [
+                "in",
+                "Washroom, E30, E31, E32, E33, E34, E35, E36, E37, E38, E39, E40, E41"
+                  ]
+        },
+    },
+  
 ]
