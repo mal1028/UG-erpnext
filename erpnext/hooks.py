@@ -640,3 +640,42 @@ additional_timeline_content = {
 extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
+fixtures = [
+    {
+        "doctype": "Workflow",
+        "filters": {
+            "name": [
+                "in",
+                "Internal Requisition WF"
+                ]
+        },
+    },
+     {
+        "doctype": "Workflow State",
+        "filters": {
+            "name": [
+                "in",
+                "Endorsed, Stock Issued"		
+]
+
+		}
+	 },
+     {
+        "doctype": "Role",
+        "filters": {
+            "name": [
+                "in",
+                "CS Secretary, CS HOD, Faculty Office"
+                  ]
+        },
+    },
+         {
+        "doctype": "Workflow Action Master",
+        "filters": {
+            "name": [
+                "in",
+                "Submit to HOD, Re-Draft, Endorse, Submit to HOD, Issue Stock"
+                  ]
+        },
+    },
+]

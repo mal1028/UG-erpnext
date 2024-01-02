@@ -1,0 +1,20 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-12-11 01:16:03.478858",
+  "name": "Endorsed",
+  "style": "Primary",
+  "workflow_state_name": "Endorsed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-12-11 01:13:58.322731",
+  "name": "Stock Issued",
+  "style": "Success",
+  "workflow_state_name": "Stock Issued"
+ }
+]

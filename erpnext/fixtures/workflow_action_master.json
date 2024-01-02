@@ -1,0 +1,30 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-11 00:45:34.143981",
+  "name": "Submit to HOD",
+  "workflow_action_name": "Submit to HOD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-11 00:46:20.250501",
+  "name": "Endorse",
+  "workflow_action_name": "Endorse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-11 00:49:50.501082",
+  "name": "Issue Stock",
+  "workflow_action_name": "Issue Stock"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-11 00:53:58.719145",
+  "name": "Re-Draft",
+  "workflow_action_name": "Re-Draft"
+ }
+]
