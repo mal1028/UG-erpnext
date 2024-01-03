@@ -641,11 +641,10 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
-    'Warehouse',
-    'Location',
+
     'Website Settings',
     'Web Page',
-    'Stock Entry Type',
+
 
     {
         "doctype": "Workflow",
@@ -661,7 +660,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Endorsed, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
+                "Endorsed, Verified, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
 ]
 
 		}
@@ -671,7 +670,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "CS Secretary, CS HOD, Faculty Office, Employee, Admin Officer"
+                "Faculty Office, Employee, Admin Officer, HOD, Secretary"
                   ]
         },
     },

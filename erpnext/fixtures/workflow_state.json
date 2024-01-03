@@ -39,6 +39,15 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
+  "modified": "2024-01-02 23:47:37.763514",
+  "name": "Verified",
+  "style": "Primary",
+  "workflow_state_name": "Verified"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
   "modified": "2024-01-02 23:47:20.511691",
   "name": "Awaiting Verification",
   "style": "Primary",
