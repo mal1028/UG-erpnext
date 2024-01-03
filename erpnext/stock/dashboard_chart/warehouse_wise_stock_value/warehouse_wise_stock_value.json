@@ -9,8 +9,8 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "last_synced_on": "2024-01-02 22:08:34.917032",
- "modified": "2024-01-02 22:21:25.474829",
+ "last_synced_on": "2024-01-03 12:08:32.824220",
+ "modified": "2024-01-03 12:09:02.328300",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse wise Stock Value",
@@ -22,7 +22,9 @@
   }
  ],
  "source": "Warehouse wise Stock Value",
- "timeseries": 0,
+ "time_interval": "Daily",
+ "timeseries": 1,
+ "timespan": "Last Quarter",
  "type": "Bar",
  "use_report_chart": 0,
  "y_axis": []
