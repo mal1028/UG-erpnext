@@ -643,13 +643,16 @@ extend_bootinfo = [
 fixtures = [
     'Warehouse',
     'Location',
-    
+    'Website Settings',
+    'Web Page',
+    'Stock Entry Type',
+
     {
         "doctype": "Workflow",
         "filters": {
             "name": [
                 "in",
-                "Internal Requisition WF"
+                "Internal Requisition WF, Stock Entry WF, Asset Movement WF"
                 ]
         },
     },
@@ -658,7 +661,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Endorsed, Stock Issued, Draft"		
+                "Endorsed, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
 ]
 
 		}
@@ -668,7 +671,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "CS Secretary, CS HOD, Faculty Office, Employee"
+                "CS Secretary, CS HOD, Faculty Office, Employee, Admin Officer"
                   ]
         },
     },
@@ -677,7 +680,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Submit to HOD, Re-Draft, Endorse, Submit to HOD, Issue Stock"
+                "Submit to HOD, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify, Return"
                   ]
         },
     },
@@ -688,15 +691,6 @@ fixtures = [
             "name": [
                 "in",
                 "2024"
-                  ]
-        },
-    },
-      {
-        "doctype": "Location",
-        "filters": {
-            "name": [
-                "in",
-                "Washroom, E30, E31, E32, E33, E34, E35, E36, E37, E38, E39, E40, E41"
                   ]
         },
     },

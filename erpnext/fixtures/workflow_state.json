@@ -2,6 +2,15 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2023-12-11 01:14:54.673432",
+  "name": "Pending",
+  "style": "Info",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
   "icon": "",
   "modified": "2023-12-11 01:16:03.478858",
   "name": "Endorsed",
@@ -21,9 +30,36 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-12-11 01:13:58.322731",
+  "modified": "2024-01-02 23:47:37.763514",
   "name": "Draft",
-  "style": "Success",
+  "style": "Primary",
   "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-02 23:47:20.511691",
+  "name": "Awaiting Verification",
+  "style": "Primary",
+  "workflow_state_name": "Awaiting Verification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-02 23:47:09.607224",
+  "name": "Out of Stock",
+  "style": "Warning",
+  "workflow_state_name": "Out of Stock"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-03 00:50:51.404850",
+  "name": "Returned",
+  "style": "",
+  "workflow_state_name": "Returned"
  }
 ]

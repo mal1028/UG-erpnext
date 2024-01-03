@@ -11,6 +11,7 @@
   "states": [
    {
     "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -24,6 +25,7 @@
    },
    {
     "allow_edit": "CS HOD",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -37,6 +39,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -50,6 +53,7 @@
    },
    {
     "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -63,6 +67,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -144,6 +149,216 @@
    }
   ],
   "workflow_name": "Internal Requisition WF",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Stock Entry",
+  "is_active": 1,
+  "modified": "2024-01-02 23:37:23.148185",
+  "name": "Stock Entry WF",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Stock Entry WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Stock Entry WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Awaiting Verification",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Stock Entry WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Verified",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Stock Entry WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Out of Stock",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Submit for verification",
+    "allow_self_approval": 1,
+    "allowed": "CS Secretary",
+    "condition": null,
+    "next_state": "Awaiting Verification",
+    "parent": "Stock Entry WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Draft"
+   },
+   {
+    "action": "Verify",
+    "allow_self_approval": 1,
+    "allowed": "Admin Officer",
+    "condition": null,
+    "next_state": "Verified",
+    "parent": "Stock Entry WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Awaiting Verification"
+   },
+   {
+    "action": "Out of Stock",
+    "allow_self_approval": 1,
+    "allowed": "CS Secretary",
+    "condition": null,
+    "next_state": "Out of Stock",
+    "parent": "Stock Entry WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Verified"
+   }
+  ],
+  "workflow_name": "Stock Entry WF",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Asset Movement",
+  "is_active": 1,
+  "modified": "2024-01-03 00:52:05.455386",
+  "name": "Asset Movement WF",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "CS Secretary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Asset Movement WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Asset Movement WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Pending",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "CS HOD",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Asset Movement WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Asset Movement WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Returned",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Submit for verification",
+    "allow_self_approval": 1,
+    "allowed": "CS Secretary",
+    "condition": null,
+    "next_state": "Pending",
+    "parent": "Asset Movement WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Draft"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Admin Officer",
+    "condition": null,
+    "next_state": "Approved",
+    "parent": "Asset Movement WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending"
+   },
+   {
+    "action": "Return",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Returned",
+    "parent": "Asset Movement WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Approved"
+   }
+  ],
+  "workflow_name": "Asset Movement WF",
   "workflow_state_field": "workflow_state"
  }
 ]

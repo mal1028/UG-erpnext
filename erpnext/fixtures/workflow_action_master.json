@@ -26,5 +26,26 @@
   "modified": "2023-12-11 00:53:58.719145",
   "name": "Re-Draft",
   "workflow_action_name": "Re-Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-02 23:24:28.624062",
+  "name": "Submit for verification",
+  "workflow_action_name": "Submit for verification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-02 23:27:48.090208",
+  "name": "Verify",
+  "workflow_action_name": "Verify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-03 00:50:26.005811",
+  "name": "Return",
+  "workflow_action_name": "Return"
  }
 ]
