@@ -25,6 +25,9 @@
   "set_warehouse",
   "items_section",
   "items",
+  "clb1",
+  "faculty_items",
+  "faculty_button",
   "terms_tab",
   "terms_section_break",
   "tc_name",
@@ -55,13 +58,13 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "MAT-MR-.YYYY.-",
+   "options": "FNS-IR-.YYYY.-",
    "print_hide": 1,
-   "reqd": 1,
    "set_only_once": 1
   },
   {
@@ -351,13 +354,32 @@
   {
    "fieldname": "column_break_13",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Endorsed\"",
+   "description": "Please Issue quantity.",
+   "fieldname": "clb1",
+   "fieldtype": "Tab Break",
+   "label": "Faculty Office Section"
+  },
+  {
+   "fieldname": "faculty_items",
+   "fieldtype": "Table",
+   "label": "Quantity",
+   "options": "Faculty Items"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state=='Endorsed'",
+   "fieldname": "faculty_button",
+   "fieldtype": "Button",
+   "label": "Click to Issue Items"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-09-15 12:07:24.789471",
+ "modified": "2024-01-04 16:04:25.293406",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",

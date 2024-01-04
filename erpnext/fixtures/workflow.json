@@ -2,9 +2,9 @@
  {
   "docstatus": 0,
   "doctype": "Workflow",
-  "document_type": "Internal Requisition",
+  "document_type": "Material Request",
   "is_active": 1,
-  "modified": "2023-12-11 01:10:14.624709",
+  "modified": "2024-01-04 15:48:25.153232",
   "name": "Internal Requisition WF",
   "override_status": 0,
   "send_email_alert": 1,
