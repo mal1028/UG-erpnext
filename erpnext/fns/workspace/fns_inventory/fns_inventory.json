@@ -114,7 +114,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-01-03 14:48:27.640473",
+ "modified": "2024-01-05 07:59:30.313504",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "FNS Inventory",
@@ -131,6 +131,14 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "New",
+   "label": "Internal Requisition",
+   "link_to": "Material Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Green",
    "doc_view": "New",
@@ -183,14 +191,6 @@
    "doc_view": "List",
    "label": "Item",
    "link_to": "Item",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Green",
-   "doc_view": "New",
-   "label": "Internal Requisition",
-   "link_to": "Internal Requisition",
    "stats_filter": "[]",
    "type": "DocType"
   }
