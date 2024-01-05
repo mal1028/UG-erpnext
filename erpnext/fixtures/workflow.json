@@ -151,13 +151,13 @@
   "doctype": "Workflow",
   "document_type": "Stock Entry",
   "is_active": 1,
-  "modified": "2024-01-02 23:37:23.148185",
+  "modified": "2024-01-05 13:52:30.754003",
   "name": "Stock Entry WF",
   "override_status": 0,
   "send_email_alert": 1,
   "states": [
    {
-    "allow_edit": "CS Secretary",
+    "allow_edit": "Secretary",
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -183,8 +183,8 @@
     "update_value": null
    },
    {
-    "allow_edit": "CS Secretary",
-    "doc_status": "0",
+    "allow_edit": "Secretary",
+    "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
@@ -194,26 +194,13 @@
     "state": "Verified",
     "update_field": null,
     "update_value": null
-   },
-   {
-    "allow_edit": "CS Secretary",
-    "doc_status": "1",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Stock Entry WF",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Out of Stock",
-    "update_field": null,
-    "update_value": null
    }
   ],
   "transitions": [
    {
     "action": "Submit for verification",
     "allow_self_approval": 1,
-    "allowed": "CS Secretary",
+    "allowed": "Secretary",
     "condition": null,
     "next_state": "Awaiting Verification",
     "parent": "Stock Entry WF",
@@ -231,17 +218,6 @@
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Awaiting Verification"
-   },
-   {
-    "action": "Out of Stock",
-    "allow_self_approval": 1,
-    "allowed": "CS Secretary",
-    "condition": null,
-    "next_state": "Out of Stock",
-    "parent": "Stock Entry WF",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Verified"
    }
   ],
   "workflow_name": "Stock Entry WF",

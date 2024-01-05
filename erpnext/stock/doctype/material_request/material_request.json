@@ -83,7 +83,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Purpose",
-   "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided",
+   "options": "\nMaterial Transfer\nMaterial Issue\nPurchase",
    "reqd": 1
   },
   {
@@ -379,7 +379,7 @@
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-04 16:04:25.293406",
+ "modified": "2024-01-05 13:55:09.746328",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
