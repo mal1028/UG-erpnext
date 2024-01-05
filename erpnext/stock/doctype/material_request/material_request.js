@@ -524,3 +524,33 @@ function set_schedule_date(frm) {
 		erpnext.utils.copy_value_in_all_rows(frm.doc, frm.doc.doctype, frm.doc.name, "items", "schedule_date");
 	}
 }
+
+frappe.ui.form.on('Material Request', {
+    onload: function(frm) {
+        frm.toggle_display('faculty_items', false);
+        frm.get_field('faculty_items').grid.cannot_add_rows = true;
+        
+    },
+    faculty_button: function(frm) {
+        
+        frm.toggle_display('faculty_items', !frm.doc.faculty_button);
+        frm.set_df_property('faculty_button', 'hidden', true);
+       
+
+        if (frm.doc.items.length >= 1) {
+            
+            for (let i = 0; i < frm.doc.items.length; i++) {
+                frm.add_child("faculty_items");
+                frm.doc.faculty_items[i].des_of_stock = frm.doc.items[i].item_code
+                frm.doc.faculty_items[i].quantity_req= frm.doc.items[i].qty 
+                frm.doc.faculty_items[i].uom = frm.doc.items[i].stock_uom 
+                frm.doc.faculty_items[i].item_name = frm.doc.items[i].item_name 
+                console.log(frm.doc.faculty_items[i])
+            }
+            frm.refresh_field("faculty_items");
+          } else {
+            return;
+          }
+        
+    }
+});

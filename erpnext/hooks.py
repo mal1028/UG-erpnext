@@ -644,6 +644,7 @@ fixtures = [
 
     'Website Settings',
     'Web Page',
+    'Translation',
 
 
     {
