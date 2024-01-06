@@ -107,7 +107,7 @@
   "modified": "2023-10-19 08:49:23.908055",
   "name": "All Warehouses - UOG",
   "old_parent": "",
-  "parent_warehouse": "",
+  "parent_warehouse": null,
   "phone_no": null,
   "pin": null,
   "state": null,
