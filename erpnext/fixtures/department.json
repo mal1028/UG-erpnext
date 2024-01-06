@@ -1,15 +1,15 @@
 [
  {
-  "company": null,
+  "company": "University of Guyana",
   "department_name": "All Departments",
-  "disabled": 0,
+  "disabled": 1,
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 1,
   "modified": "2024-01-06 01:48:20.670692",
   "name": "All Departments",
-  "old_parent": null,
-  "parent_department": ""
+  "old_parent": "Accounts",
+  "parent_department": "Accounts"
  },
  {
   "company": "University of Guyana",
@@ -17,7 +17,7 @@
   "disabled": 1,
   "docstatus": 0,
   "doctype": "Department",
-  "is_group": 0,
+  "is_group": 1,
   "modified": "2024-01-06 03:23:15.387257",
   "name": "Accounts",
   "old_parent": "All Departments",
@@ -110,25 +110,25 @@
  {
   "company": "University of Guyana",
   "department_name": "Human Resources",
-  "disabled": 0,
+  "disabled": 1,
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 01:48:20.731222",
+  "modified": "2024-01-06 03:39:49.115966",
   "name": "Human Resources",
-  "old_parent": null,
+  "old_parent": "All Departments",
   "parent_department": "All Departments"
  },
  {
   "company": "University of Guyana",
   "department_name": "Management",
-  "disabled": 0,
+  "disabled": 1,
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 01:48:20.735666",
+  "modified": "2024-01-06 03:39:59.762271",
   "name": "Management",
-  "old_parent": null,
+  "old_parent": "All Departments",
   "parent_department": "All Departments"
  },
  {
@@ -174,10 +174,10 @@
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 03:27:34.945736",
+  "modified": "2024-01-06 04:08:07.549857",
   "name": "Chemistry - UOG",
-  "old_parent": "All Departments",
-  "parent_department": "All Departments"
+  "old_parent": "All Departments in FNS - UOG",
+  "parent_department": "All Departments in FNS - UOG"
  },
  {
   "company": "University of Guyana",
@@ -186,10 +186,10 @@
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 03:28:47.361168",
+  "modified": "2024-01-06 04:07:48.742752",
   "name": "Center for the Study of Biological Diversity - UOG",
-  "old_parent": "All Departments",
-  "parent_department": "All Departments"
+  "old_parent": "All Departments in FNS - UOG",
+  "parent_department": "All Departments in FNS - UOG"
  },
  {
   "company": "University of Guyana",
@@ -198,10 +198,10 @@
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 03:29:40.120478",
+  "modified": "2024-01-06 04:07:28.897417",
   "name": "Mathematics Physics & Statistic - UOG",
-  "old_parent": "All Departments",
-  "parent_department": "All Departments"
+  "old_parent": "All Departments in FNS - UOG",
+  "parent_department": "All Departments in FNS - UOG"
  },
  {
   "company": "University of Guyana",
@@ -210,10 +210,10 @@
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 03:30:21.568554",
+  "modified": "2024-01-06 04:07:17.315012",
   "name": "Biology - UOG",
-  "old_parent": "All Departments",
-  "parent_department": "All Departments"
+  "old_parent": "All Departments in FNS - UOG",
+  "parent_department": "All Departments in FNS - UOG"
  },
  {
   "company": "University of Guyana",
@@ -222,8 +222,20 @@
   "docstatus": 0,
   "doctype": "Department",
   "is_group": 0,
-  "modified": "2024-01-06 03:31:11.206170",
+  "modified": "2024-01-06 04:07:03.269496",
   "name": "Computer Science - UOG",
+  "old_parent": "All Departments in FNS - UOG",
+  "parent_department": "All Departments in FNS - UOG"
+ },
+ {
+  "company": "University of Guyana",
+  "department_name": "All Departments in FNS",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Department",
+  "is_group": 1,
+  "modified": "2024-01-06 03:57:08.635415",
+  "name": "All Departments in FNS - UOG",
   "old_parent": "All Departments",
   "parent_department": "All Departments"
  }
