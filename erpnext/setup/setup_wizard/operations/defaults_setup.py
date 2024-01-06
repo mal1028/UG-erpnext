@@ -31,7 +31,7 @@ def set_default_settings(args):
 	stock_settings.item_naming_by = "Item Code"
 	stock_settings.valuation_method = "FIFO"
 	stock_settings.default_warehouse = frappe.db.get_value(
-		"Warehouse", {"warehouse_name": _("Faculty Office")}
+		"Warehouse", {"warehouse_name": _("Stores")}
 	)
 	stock_settings.stock_uom = _("Nos")
 	stock_settings.auto_indent = 1
