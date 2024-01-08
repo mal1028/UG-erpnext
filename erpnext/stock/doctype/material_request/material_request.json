@@ -148,6 +148,7 @@
   },
   {
    "allow_bulk_edit": 1,
+   "description": "Form Tip: Click on the \\\"Add Row\\\" button at the bottom of the table, to create a new entry for each item.",
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Items",
@@ -379,7 +380,7 @@
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-05 13:55:09.746328",
+ "modified": "2024-01-08 12:05:05.978014",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",

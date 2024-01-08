@@ -16,7 +16,7 @@ frappe.ui.form.on('Material Request', {
 			'Work Order': 'Work Order',
 			'Purchase Receipt': 'Purchase Receipt'
 		};
-
+		
 		// formatter for material request item
 		frm.set_indicator_formatter('item_code',
 			function(doc) { return (doc.stock_qty<=doc.ordered_qty) ? "green" : "orange"; });
@@ -553,4 +553,20 @@ frappe.ui.form.on('Material Request', {
           }
         
     }
+	
 });
+
+frappe.require("assets/erpnext/js/event.js", () =>{
+	items_info_tab = frm.page.wrapper.find('div[data-fieldtype="Table"][data-fieldname="items"]');
+	items_info_tab.find(".grid-add-row").text("Add items").css(obj);
+	hideSettingGear(items_info_tab);
+	});
+
+frappe.ui.form.on("Material Request Item", {
+    form_render: function (frm) {
+      removeFormModalControles(frm);
+      hideSettingGear(items_info_tab);
+	  
+    },
+	
+  });
