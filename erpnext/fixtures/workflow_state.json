@@ -70,5 +70,86 @@
   "name": "Returned",
   "style": "",
   "workflow_state_name": "Returned"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:20:00.777771",
+  "name": "Submitted to Faculty Office",
+  "style": "Info",
+  "workflow_state_name": "Submitted to Faculty Office"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:19:47.836593",
+  "name": "Repair in progress",
+  "style": "Primary",
+  "workflow_state_name": "Repair in progress"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:20:17.403680",
+  "name": "Repair Completed",
+  "style": "Success",
+  "workflow_state_name": "Repair Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:20:33.605235",
+  "name": "Verified by Admin Officer",
+  "style": "Primary",
+  "workflow_state_name": "Verified by Admin Officer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:17:14.272752",
+  "name": "Stock needed for repairs",
+  "style": "Warning",
+  "workflow_state_name": "Stock needed for repairs"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 03:13:57.038925",
+  "name": "Not Working",
+  "style": "Danger",
+  "workflow_state_name": "Not Working"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 02:58:10.597738",
+  "name": "Stock approved for repairs",
+  "style": "",
+  "workflow_state_name": "Stock approved for repairs"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 03:03:53.587109",
+  "name": "Dismantle & Storage",
+  "style": "Warning",
+  "workflow_state_name": "Dismantle & Storage"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-09 03:08:08.869481",
+  "name": "Discarded",
+  "style": "",
+  "workflow_state_name": "Discarded"
  }
 ]

@@ -89,7 +89,8 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Maintenance",
-   "link_count": 2,
+   "link_count": 1,
+   "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -102,19 +103,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Asset Maintenance Log",
-   "link_count": 0,
-   "link_to": "Asset Maintenance Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2024-01-05 07:59:30.313504",
+ "modified": "2024-01-08 23:35:05.777754",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "FNS Inventory",

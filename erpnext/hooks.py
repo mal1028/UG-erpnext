@@ -653,7 +653,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Internal Requisition WF, Stock Entry WF, Asset Movement WF"
+                "Internal Requisition WF, Stock Entry WF, Asset Movement WF, Asset Repair WF"
                 ]
         },
     },
@@ -662,7 +662,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Endorsed, Verified, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
+                "Endorsed, Discarded, Dismantle & Storage, Not Working, Stock approved for repairs, Stock needed for repairs, Verified by Admin Officer, Repair Completed, Repair in progress, Submitted to Faculty Office, Verified, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
 ]
 
 		}
@@ -672,7 +672,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Faculty Office, Employee, Admin Officer, HOD, Secretary"
+                "Faculty Office, Internal Auditor, Maintenance User, Department Staff, Employee, Admin Officer, HOD, Secretary"
                   ]
         },
     },
@@ -681,7 +681,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Submit to HOD, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify, Return"
+                "Submit to HOD, Discard, Dismantle & Storage, Not Working, Working, Fix internally, Submit to faculty office, Send to Maintenance, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify, Return"
                   ]
         },
     },

@@ -40,8 +40,7 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Company",
-   "options": "Company",
-   "reqd": 1
+   "options": "Company"
   },
   {
    "bold": 1,
@@ -90,7 +89,7 @@
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-08-28 17:26:46.826501",
+ "modified": "2024-01-09 00:59:06.883705",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Department",

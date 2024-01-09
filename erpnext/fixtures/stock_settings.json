@@ -10,7 +10,7 @@
   "auto_insert_price_list_rate_if_missing": 1,
   "automatically_set_serial_nos_based_on_fifo": 1,
   "clean_description_html": 1,
-  "default_warehouse": "Faculty Office - UOG",
+  "default_warehouse": "CS Warehouse - UOG",
   "disable_serial_no_and_batch_selector": 0,
   "docstatus": 0,
   "doctype": "Stock Settings",

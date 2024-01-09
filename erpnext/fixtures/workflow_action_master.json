@@ -47,5 +47,54 @@
   "modified": "2024-01-03 00:50:26.005811",
   "name": "Return",
   "workflow_action_name": "Return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 02:22:19.575670",
+  "name": "Submit to faculty office",
+  "workflow_action_name": "Submit to faculty office"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 02:24:55.783019",
+  "name": "Send to Maintenance",
+  "workflow_action_name": "Send to Maintenance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 02:32:33.165271",
+  "name": "Fix internally",
+  "workflow_action_name": "Fix internally"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 02:48:24.413348",
+  "name": "Working",
+  "workflow_action_name": "Working"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 02:50:08.839115",
+  "name": "Not Working",
+  "workflow_action_name": "Not Working"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 03:03:10.829235",
+  "name": "Dismantle & Storage",
+  "workflow_action_name": "Dismantle & Storage"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-09 03:05:12.941015",
+  "name": "Discard",
+  "workflow_action_name": "Discard"
  }
 ]
