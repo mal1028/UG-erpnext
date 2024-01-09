@@ -5,7 +5,7 @@
    "label": "Warehouse wise Stock Value"
   }
  ],
- "content": "[{\"id\":\"_55d53eL3n\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Faculty of Natural Science</span>\",\"col\":12}},{\"id\":\"YCajpmaotG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"1QuyGqCNKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":4}},{\"id\":\"XNLN8WnaOE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"ResYiiAk8Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"nr5fb-p4z7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"CwJqgk7zV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"2MfCMR5udw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"X35180Xc0B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"View Stock Ledger\",\"col\":3}},{\"id\":\"5jfvXeXj6w\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Reconciliation\",\"col\":3}},{\"id\":\"-XbDgNYD9O\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"yonPBDosSg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"XAuWr8tnrj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span><b></b>\",\"col\":12}},{\"id\":\"UUuk9CF17o\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"SNfTKKZiET\",\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}}]",
+ "content": "[{\"id\":\"_55d53eL3n\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Faculty of Natural Science</span>\",\"col\":12}},{\"id\":\"YCajpmaotG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"1QuyGqCNKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":4}},{\"id\":\"RsQowJsPnR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Incoming Requisitions\",\"col\":4}},{\"id\":\"C6r7FX-eyf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":4}},{\"id\":\"XNLN8WnaOE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"ResYiiAk8Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"nr5fb-p4z7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"CwJqgk7zV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"2MfCMR5udw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"X35180Xc0B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"View Stock Ledger\",\"col\":3}},{\"id\":\"-XbDgNYD9O\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"yonPBDosSg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"5jfvXeXj6w\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Reconciliation\",\"col\":3}},{\"id\":\"XAuWr8tnrj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span><b></b>\",\"col\":12}},{\"id\":\"UUuk9CF17o\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"SNfTKKZiET\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"id\":\"FhX5jf5LTN\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Management\",\"col\":4}}]",
  "creation": "2023-12-08 17:48:29.795470",
  "custom_blocks": [],
  "docstatus": 0,
@@ -20,8 +20,26 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Employee Management",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Stock Reports",
-   "link_count": 6,
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -78,19 +96,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Deleted Document",
-   "link_count": 0,
-   "link_to": "Deleted Document",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Maintenance",
-   "link_count": 1,
-   "link_type": "DocType",
+   "label": "Tools",
+   "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -103,13 +110,41 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quick Stock Balance",
+   "link_count": 0,
+   "link_to": "Quick Stock Balance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Deleted Document",
+   "link_count": 0,
+   "link_to": "Deleted Document",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-01-08 23:35:05.777754",
+ "modified": "2024-01-09 16:20:39.441040",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "FNS Inventory",
  "number_cards": [
+  {
+   "label": "Total Active Items",
+   "number_card_name": "Total Active Items"
+  },
+  {
+   "label": "Incoming Requisitions",
+   "number_card_name": "Incoming Requisitions"
+  },
   {
    "label": "Total Warehouses",
    "number_card_name": "Total Warehouses"
@@ -124,9 +159,17 @@
  "shortcuts": [
   {
    "color": "Green",
-   "doc_view": "New",
+   "doc_view": "List",
    "label": "Internal Requisition",
    "link_to": "Material Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Asset",
+   "link_to": "Asset",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -160,14 +203,6 @@
    "label": "Fixed Asset Register",
    "link_to": "Fixed Asset Register",
    "type": "Report"
-  },
-  {
-   "color": "Green",
-   "doc_view": "New",
-   "label": "Asset",
-   "link_to": "Asset",
-   "stats_filter": "[]",
-   "type": "DocType"
   },
   {
    "color": "Green",

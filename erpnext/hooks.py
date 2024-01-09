@@ -647,6 +647,15 @@ fixtures = [
     'Translation',
     'Warehouse',
 
+{
+    "doctype": "Department",
+        "filters": {
+            "name": [
+                "in",
+                "Department of Biology, Department of Chemistry, Department of Computer Science, Department of Maths Physics & Statistics, Center for Study of Biological Diversity, Faculty Office"
+                ]
+        },
+        },
 
     {
         "doctype": "Workflow",
