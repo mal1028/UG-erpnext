@@ -641,7 +641,6 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
-	
     'Website Settings',
     'Web Page',
     'Translation',
