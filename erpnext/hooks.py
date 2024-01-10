@@ -641,10 +641,21 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
-    'Website Settings',
-    'Web Page',
+    
     'Translation',
     'Warehouse',
+    
+    {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},
+    
+	{
+        "doctype": "Web Page",
+        "filters": {
+            "name": [
+                "in",
+                "home-page, contact-us",
+            ]
+        },
+    },
 
 {
     "doctype": "Department",

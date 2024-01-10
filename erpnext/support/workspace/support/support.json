@@ -9,7 +9,7 @@
  "hide_custom": 0,
  "icon": "support",
  "idx": 0,
- "is_hidden": 0,
+ "is_hidden": 1,
  "label": "Support",
  "links": [
   {
@@ -171,7 +171,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-01-02 12:14:19.318492",
+ "modified": "2024-01-10 09:22:12.920962",
  "modified_by": "Administrator",
  "module": "Support",
  "name": "Support",
