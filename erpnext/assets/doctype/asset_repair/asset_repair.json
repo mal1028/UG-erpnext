@@ -72,21 +72,19 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval:!doc.__islocal",
+   "depends_on": "eval:doc.workflow_state==\"Pending\"",
    "fieldname": "completion_date",
    "fieldtype": "Datetime",
    "label": "Completion Date",
    "no_copy": 1
   },
   {
-   "default": "Pending",
-   "depends_on": "eval:!doc.__islocal",
+   "depends_on": "eval:doc.workflow_state >= \"Pending\"",
    "fieldname": "repair_status",
    "fieldtype": "Select",
    "label": "Repair Status",
    "no_copy": 1,
-   "options": "\nPending\nCompleted\nCancelled",
-   "print_hide": 1
+   "options": "\nPending\nCompleted\nCancelled"
   },
   {
    "fieldname": "section_break_9",
@@ -103,9 +101,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.workflow_state==\"Stock approved for repairs\"",
    "fieldname": "actions_performed",
    "fieldtype": "Long Text",
-   "label": "Actions performed"
+   "label": "Actions performed",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Stock approved for repairs\""
   },
   {
    "fieldname": "downtime",
@@ -160,6 +160,7 @@
    "label": "Capitalize Repair Cost"
   },
   {
+   "depends_on": "eval:doc.workflow_state==\"Repair in progress\"",
    "fieldname": "accounting_details",
    "fieldtype": "Section Break",
    "label": "Accounting Details"
@@ -179,6 +180,7 @@
    "collapsible": 1,
    "fieldname": "accounting_dimensions_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Accounting Dimensions"
   },
   {
@@ -264,7 +266,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-09 01:39:41.609692",
+ "modified": "2024-01-11 02:07:33.575691",
  "modified_by": "Administrator",
  "module": "Assets",
  "name": "Asset Repair",
