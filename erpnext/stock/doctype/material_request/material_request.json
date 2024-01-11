@@ -16,6 +16,7 @@
   "column_break_2",
   "transaction_date",
   "schedule_date",
+  "amended_from",
   "warehouse_section",
   "scan_barcode",
   "column_break_13",
@@ -46,8 +47,7 @@
   "job_card",
   "column_break_35",
   "work_order",
-  "connections_tab",
-  "amended_from"
+  "connections_tab"
  ],
  "fields": [
   {
@@ -307,7 +307,6 @@
    "read_only": 1
   },
   {
-   "depends_on": "eval:doc.workflow_state >= \"Endorsed\"",
    "fieldname": "terms_tab",
    "fieldtype": "Tab Break",
    "label": "Terms"
@@ -344,41 +343,44 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.workflow_state==\"Endorsed\"",
    "description": "Please Issue quantity.",
    "fieldname": "clb1",
    "fieldtype": "Tab Break",
    "label": "Faculty Office Section"
   },
   {
-   "depends_on": "eval:doc.workflow_state== \"Endorsed\"",
    "fieldname": "faculty_items",
    "fieldtype": "Table",
    "label": "Quantity",
    "options": "Faculty Items"
   },
   {
-   "depends_on": "eval:doc.workflow_state== \"Endorsed\"",
+   "depends_on": "eval:doc.workflow_state=='Endorsed'",
    "fieldname": "faculty_button",
    "fieldtype": "Button",
-   "label": "Click to Issue Items",
-   "set_only_once": 1
+   "label": "Click to Issue Items"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
+   "ignore_user_permissions": 1,
    "label": "Amended From",
    "no_copy": 1,
+   "oldfieldname": "amended_from",
+   "oldfieldtype": "Data",
    "options": "Material Request",
    "print_hide": 1,
+   "print_width": "150px",
    "read_only": 1,
-   "search_index": 1
+   "width": "150px"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-11 02:52:02.731478",
+ "modified": "2024-01-11 09:03:07.047457",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
@@ -450,9 +452,5 @@
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "title",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "states": []
 }
