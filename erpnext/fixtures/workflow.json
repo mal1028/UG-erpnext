@@ -341,7 +341,7 @@
   "doctype": "Workflow",
   "document_type": "Asset Repair",
   "is_active": 1,
-  "modified": "2024-01-09 03:35:18.823904",
+  "modified": "2024-01-11 01:29:22.808137",
   "name": "Asset Repair WF",
   "override_status": 0,
   "send_email_alert": 1,
@@ -620,6 +620,28 @@
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Repair in progress"
+   },
+   {
+    "action": "Dismantle & Storage",
+    "allow_self_approval": 1,
+    "allowed": "Internal Auditor",
+    "condition": null,
+    "next_state": "Dismantle & Storage",
+    "parent": "Asset Repair WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Not Working"
+   },
+   {
+    "action": "Discard",
+    "allow_self_approval": 1,
+    "allowed": "Internal Auditor",
+    "condition": null,
+    "next_state": "Discarded",
+    "parent": "Asset Repair WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Not Working"
    },
    {
     "action": "Approve",
