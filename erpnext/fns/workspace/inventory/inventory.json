@@ -5,17 +5,17 @@
    "label": "Warehouse wise Stock Value"
   }
  ],
- "content": "[{\"id\":\"_55d53eL3n\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\"><b>Inventory Management Workspace</b></span>\",\"col\":12}},{\"id\":\"YCajpmaotG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"1QuyGqCNKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":4}},{\"id\":\"RsQowJsPnR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Incoming Requisitions\",\"col\":4}},{\"id\":\"C6r7FX-eyf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":4}},{\"id\":\"yJpXOn9vxU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\" style=\\\"\\\">Dashboards</span>\",\"col\":12}},{\"id\":\"2MBFcwiHs5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Dashboard\",\"col\":3}},{\"id\":\"IcU8Zi-ZM6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Dashboard\",\"col\":3}},{\"id\":\"XNLN8WnaOE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"nr5fb-p4z7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"ResYiiAk8Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"2MfCMR5udw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"CwJqgk7zV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"yonPBDosSg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"X35180Xc0B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"View Stock Ledger\",\"col\":3}},{\"id\":\"-XbDgNYD9O\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"XAuWr8tnrj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span><b></b>\",\"col\":12}},{\"id\":\"UUuk9CF17o\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"SNfTKKZiET\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"id\":\"FhX5jf5LTN\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Management\",\"col\":4}}]",
+ "content": "[{\"id\":\"_55d53eL3n\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\"><b>Inventory Management Workspace</b></span>\",\"col\":12}},{\"id\":\"phSbyp_yua\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"CS\",\"col\":12}},{\"id\":\"YCajpmaotG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"1QuyGqCNKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":4}},{\"id\":\"RsQowJsPnR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Incoming Requisitions\",\"col\":4}},{\"id\":\"C6r7FX-eyf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":4}},{\"id\":\"yJpXOn9vxU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\" style=\\\"\\\">Dashboards</span>\",\"col\":12}},{\"id\":\"2MBFcwiHs5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Dashboard\",\"col\":3}},{\"id\":\"IcU8Zi-ZM6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Dashboard\",\"col\":3}},{\"id\":\"XNLN8WnaOE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"nr5fb-p4z7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"ResYiiAk8Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"2MfCMR5udw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"CwJqgk7zV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"yonPBDosSg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"X35180Xc0B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"View Stock Ledger\",\"col\":3}},{\"id\":\"-XbDgNYD9O\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"XAuWr8tnrj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span><b></b>\",\"col\":12}},{\"id\":\"UUuk9CF17o\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"SNfTKKZiET\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"id\":\"FhX5jf5LTN\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Management\",\"col\":4}}]",
  "creation": "2023-12-08 17:48:29.795470",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "list",
+ "icon": "stock",
  "idx": 0,
  "is_hidden": 0,
- "label": "FNS Inventory",
+ "label": "Inventory",
  "links": [
   {
    "hidden": 0,
@@ -132,10 +132,10 @@
    "type": "Link"
   }
  ],
- "modified": "2024-01-10 20:32:08.580718",
+ "modified": "2024-02-04 23:07:52.188365",
  "modified_by": "Administrator",
  "module": "FNS",
- "name": "FNS Inventory",
+ "name": "Inventory",
  "number_cards": [
   {
    "label": "Total Active Items",
@@ -227,5 +227,5 @@
    "type": "DocType"
   }
  ],
- "title": "FNS Inventory"
+ "title": "Inventory"
 }

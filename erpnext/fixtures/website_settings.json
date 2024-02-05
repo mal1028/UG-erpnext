@@ -19,7 +19,7 @@
   "footer_items": [],
   "footer_logo": null,
   "footer_powered": null,
-  "footer_template": null,
+  "footer_template": "Footer",
   "footer_template_values": null,
   "google_analytics_anonymize_ip": 1,
   "google_analytics_id": null,
