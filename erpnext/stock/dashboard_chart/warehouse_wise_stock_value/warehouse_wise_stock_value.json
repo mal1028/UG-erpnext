@@ -1,7 +1,7 @@
 {
  "chart_name": "Warehouse wise Stock Value",
  "chart_type": "Custom",
- "color": "#0a8f5c",
+ "color": "#154734",
  "creation": "2020-07-20 21:01:04.296157",
  "docstatus": 0,
  "doctype": "Dashboard Chart",
@@ -9,8 +9,8 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "last_synced_on": "2024-01-11 02:45:03.065516",
- "modified": "2024-01-11 02:46:16.420973",
+ "last_synced_on": "2024-02-05 12:15:10.545141",
+ "modified": "2024-02-05 12:15:35.462134",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse wise Stock Value",
@@ -25,7 +25,7 @@
  "time_interval": "Daily",
  "timeseries": 1,
  "timespan": "Last Week",
- "type": "Bar",
+ "type": "Line",
  "use_report_chart": 0,
  "y_axis": []
 }

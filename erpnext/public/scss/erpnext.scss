@@ -20,7 +20,9 @@
 	margin-right: 0px;
 	margin-top: -3px;
 }
-
+h1, .h1 {
+    font-size: 2.75rem;
+}
 .app-icon-svg {
 	display: inline-block;
 	margin: auto;
@@ -587,6 +589,6 @@ body[data-route="pos"] {
 }
 
 .page-title {
-    display: none;
+
     align-items: center;
 }
