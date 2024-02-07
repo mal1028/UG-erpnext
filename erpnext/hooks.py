@@ -695,6 +695,15 @@ fixtures = [
                   ]
         },
     },
+     {
+        "doctype": "Custom DocPerm",
+        "filters": {
+            "name": [
+                "in",
+                "Faculty Office, Internal Auditor, Maintenance User, Department Staff, Employee, Admin Officer, HOD, Secretary"
+                  ]
+        },
+    },
          {
         "doctype": "Workflow Action Master",
         "filters": {

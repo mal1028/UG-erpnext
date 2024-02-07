@@ -162,8 +162,13 @@ def prepare_chart_data(data, filters):
 	if filters.filter_based_on not in ("Date Range", "Fiscal Year"):
 		filters_filter_based_on = "Date Range"
 		date_field = "purchase_date"
-		filters_from_date = min(data, key=lambda a: a.get(date_field)).get(date_field)
-		filters_to_date = max(data, key=lambda a: a.get(date_field)).get(date_field)
+		filtered_data = [item.get(date_field) for item in data if item.get(date_field) is not None]
+		if filtered_data:
+			filters_from_date = min(filtered_data)
+			filters_to_date = max(filtered_data)
+		else:
+			filters_from_date = None 
+			filters_to_date = None
 	else:
 		filters_filter_based_on = filters.filter_based_on
 		date_field = frappe.scrub(filters.date_based_on)
