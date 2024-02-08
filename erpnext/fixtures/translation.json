@@ -11,5 +11,18 @@
   "name": "7456b18947",
   "source_text": "Material Request",
   "translated_text": "Internal Requisition"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "en",
+  "modified": "2024-02-08 10:10:25.320699",
+  "name": "da47be17ab",
+  "source_text": "Stock",
+  "translated_text": "Inventory"
  }
 ]

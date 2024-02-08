@@ -1,5 +1,5 @@
 {
- "color": "#a16300",
+ "color": "#000000",
  "creation": "2020-07-20 21:01:04.422436",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -11,7 +11,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Total Active Items",
- "modified": "2024-01-09 16:00:15.535973",
+ "modified": "2024-02-08 11:01:53.329665",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Total Active Items",

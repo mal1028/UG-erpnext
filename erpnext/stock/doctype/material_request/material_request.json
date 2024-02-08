@@ -11,6 +11,8 @@
   "naming_series",
   "title",
   "material_request_type",
+  "procurement_categories",
+  "method_of_procurement",
   "customer",
   "company",
   "column_break_2",
@@ -25,6 +27,24 @@
   "set_warehouse",
   "items_section",
   "items",
+  "section_break_52sc",
+  "installation_required",
+  "justification",
+  "deputy_general_manager_comments",
+  "department",
+  "column_break_aufr",
+  "delivery_location",
+  "preferred_delivery_date",
+  "warranty",
+  "section_break_kw9i",
+  "scanned_pr",
+  "technical_specification",
+  "evaluation_report",
+  "column_break_zmmp",
+  "engineers_estimate",
+  "notice_of_award",
+  "award_contract",
+  "date_award_received",
   "clb1",
   "faculty_items",
   "faculty_button",
@@ -56,15 +76,17 @@
    "options": "fa fa-pushpin"
   },
   {
+   "default": "FNS-IR-.YYYY.-.####.",
    "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "hidden": 1,
+   "fieldtype": "Data",
    "label": "Series",
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "FNS-IR-.YYYY.-",
+   "options": "FNS-IR-.YYYY.-.####.",
    "print_hide": 1,
+   "read_only": 1,
+   "reqd": 1,
    "set_only_once": 1
   },
   {
@@ -73,18 +95,17 @@
    "fieldname": "title",
    "fieldtype": "Data",
    "hidden": 1,
-   "label": "Title",
+   "label": "Title (Subject)",
    "no_copy": 1,
    "print_hide": 1
   },
   {
-   "default": "Material Transfer",
    "fieldname": "material_request_type",
    "fieldtype": "Select",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Purpose",
-   "options": "\nMaterial Transfer\nMaterial Issue\nPurchase",
+   "options": "Material Transfer\nPurchase\nMaterial Issue",
    "reqd": 1
   },
   {
@@ -122,6 +143,20 @@
    "width": "150px"
   },
   {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "oldfieldname": "amended_from",
+   "oldfieldtype": "Data",
+   "options": "Material Request",
+   "print_hide": 1,
+   "print_width": "150px",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
    "fieldname": "items_section",
    "fieldtype": "Section Break",
    "oldfieldtype": "Section Break",
@@ -145,6 +180,7 @@
    "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "transaction_date",
    "fieldtype": "Date",
    "label": "Transaction Date",
@@ -270,8 +306,8 @@
   {
    "fieldname": "set_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
-   "in_list_view": 1,
    "label": "Set Target Warehouse",
    "options": "Warehouse"
   },
@@ -283,14 +319,13 @@
    "width": "50%"
   },
   {
-   "allow_on_submit": 1,
-   "default": "Faculty Office - UOG",
    "depends_on": "eval:doc.material_request_type == 'Material Transfer'",
    "fieldname": "set_from_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
    "label": "Set Source Warehouse",
-"options": "Warehouse",
-   "read_only": 1
+   "options": "Warehouse"
   },
   {
    "allow_on_submit": 1,
@@ -325,6 +360,12 @@
    "show_dashboard": 1
   },
   {
+   "description": "Please Issue quantity.",
+   "fieldname": "clb1",
+   "fieldtype": "Tab Break",
+   "label": "<b>Faculty Office Section</b>"
+  },
+  {
    "collapsible": 1,
    "fieldname": "status_section",
    "fieldtype": "Section Break",
@@ -345,13 +386,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval:doc.workflow_state==\"Endorsed\"",
-   "description": "Please Issue quantity.",
-   "fieldname": "clb1",
-   "fieldtype": "Tab Break",
-   "label": "Faculty Office Section"
-  },
-  {
    "fieldname": "faculty_items",
    "fieldtype": "Table",
    "label": "Quantity",
@@ -364,25 +398,147 @@
    "label": "Click to Issue Items"
   },
   {
-   "fieldname": "amended_from",
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "procurement_categories",
+   "fieldtype": "Select",
+   "label": "Procurement Categories",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "options": "\nGoods\nServices\nConsultancy"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fetch_if_empty": 1,
+   "fieldname": "method_of_procurement",
+   "fieldtype": "Select",
+   "label": "Method of Procurement",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "options": "\nSole Sourcing\nRequest for Quotation\nOpen Tendered\nRestricted Tendered"
+  },
+  {
+   "fieldname": "section_break_52sc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "installation_required",
+   "fieldtype": "Select",
+   "label": "Installation required",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "options": "\nYes\nNo\nNot Applicable"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "justification",
+   "fieldtype": "Small Text",
+   "label": "Justification",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase' && (doc.workflow_state == \"Pending PR (admin)\" || doc.workflow_state == \"Pending PR (ops)\");",
+   "fieldname": "deputy_general_manager_comments",
+   "fieldtype": "Small Text",
+   "label": "General Manager Comments",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase' && (doc.workflow_state == \"Pending PR (admin)\" || doc.workflow_state == \"Pending PR (ops)\");"
+  },
+  {
+   "fieldname": "department",
    "fieldtype": "Link",
-   "ignore_user_permissions": 1,
-   "label": "Amended From",
-   "no_copy": 1,
-   "oldfieldname": "amended_from",
-   "oldfieldtype": "Data",
-   "options": "Material Request",
-   "print_hide": 1,
-   "print_width": "150px",
-   "read_only": 1,
-   "width": "150px"
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_aufr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "delivery_location",
+   "fieldtype": "Data",
+   "label": "Delivery Location",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "preferred_delivery_date",
+   "fieldtype": "Date",
+   "label": "Preferred Delivery Date",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "warranty",
+   "fieldtype": "Select",
+   "label": "Warranty",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "options": "\nYes\nNo\nNot Applicable"
+  },
+  {
+   "fieldname": "section_break_kw9i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "scanned_pr",
+   "fieldtype": "Attach",
+   "label": "Scanned PR",
+   "mandatory_depends_on": "eval:doc.material_request_type == 'Purchase';"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "technical_specification",
+   "fieldtype": "Attach",
+   "label": "Technical specification"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "evaluation_report",
+   "fieldtype": "Attach",
+   "label": "Evaluation Report"
+  },
+  {
+   "fieldname": "column_break_zmmp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.material_request_type == 'Purchase';",
+   "fieldname": "engineers_estimate",
+   "fieldtype": "Attach",
+   "label": "Engineer's Estimate"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.method_of_procurement == \"Open Tendered\" || doc.method_of_procurement == \"Restricted Tendered\"",
+   "fieldname": "notice_of_award",
+   "fieldtype": "Attach",
+   "label": "Notice of Award"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.method_of_procurement == \"Open Tendered\" || doc.method_of_procurement == \"Restricted Tendered\"",
+   "fieldname": "award_contract",
+   "fieldtype": "Attach",
+   "label": "Award Contract"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.method_of_procurement == \"Open Tendered\" || doc.method_of_procurement == \"Restricted Tendered\"",
+   "fieldname": "date_award_received",
+   "fieldtype": "Date",
+   "label": "Date Award Received"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-07 22:56:59.693188",
+ "modified": "2024-02-08 16:04:28.659553",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
@@ -490,5 +646,6 @@
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }

@@ -21,7 +21,12 @@
 	margin-top: -3px;
 }
 h1, .h1 {
+	margin-bottom: 7px;
+    font-weight: 400;
+    line-height: 1.2;
     font-size: 2.75rem;
+	font-family: inherit;
+    text-transform: uppercase;
 }
 .app-icon-svg {
 	display: inline-block;
@@ -501,12 +506,17 @@ body[data-route="pos"] {
     --ug-green: #154734;
     --ug-login: #f7f6f3;
 	--light: #FFFEF6;
+	--fg-color: white;
 		--dark: #102E46;
+		--shadow-sm: 0px 1px 2px rgba(25, 39, 52, 0.05), 0px 0px 4px rgba(25, 39, 52, 0.1);
 	    /* Override Frappe Desk global colours with new colours */
 		--text-color: var(--ug-green) !important;
 		--heading-color: var(--ug-green) !important;
 		--icon-stroke: var(--dark) !important;
 		--text-light: var(--ug-green) !important;
+		--text-tiny: 11px;
+		--card-bg: var(--fg-color);
+		--card-shadow: var(--shadow-sm);
 	
 }
 .navbar-home img {
@@ -592,3 +602,16 @@ body[data-route="pos"] {
 
     align-items: center;
 }
+.widget.number-widget-box .widget-head .widget-title {
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: var(--text-tiny);
+}
+.std-form-layout > .form-layout > .form-page {
+	margin-left: -231px !important;
+	border-radius: var(--border-radius-md) !important;
+    box-shadow: var(--card-shadow) !important;
+    background-color: var(--card-bg) !important;
+} 

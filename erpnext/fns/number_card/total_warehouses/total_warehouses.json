@@ -1,5 +1,5 @@
 {
- "color": "#ff0000",
+ "color": "#000000",
  "creation": "2024-01-09 22:54:36.898125",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -11,7 +11,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Total Warehouses",
- "modified": "2024-02-07 23:10:09.796691",
+ "modified": "2024-02-08 10:47:49.407093",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "Total Warehouses",

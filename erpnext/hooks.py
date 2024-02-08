@@ -646,15 +646,6 @@ fixtures = [
     'Warehouse',
     'Custom DocPerm',
     
-{
-        "doctype": "User",
-        "filters": {
-            "name": [
-                "in",
-                "secretary@test.com, admin@test.com",
-            ]
-        },
-    },
     {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},
     
 	{

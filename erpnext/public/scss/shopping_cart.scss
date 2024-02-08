@@ -16,8 +16,12 @@ body.product-page {
 			color: var(--gray-900);
 		}
 	}
-}
-
+}.std-form-layout > .form-layout > .form-page {
+	margin-left: -231px !important;
+	border-radius: var(--border-radius-md) !important;
+    box-shadow: var(--card-shadow) !important;
+    background-color: var(--card-bg) !important;
+} 
 .carousel-control {
 	height: 42px;
 	width: 42px;

@@ -23,8 +23,56 @@ form_grid_templates = {"items": "templates/form_grid/material_request_grid.html"
 
 
 class MaterialRequest(BuyingController):
-	def get_feed(self):
-		return
+	# begin: auto-generated types
+	# This code is auto-generated. Do not modify anything in this block.
+
+	from typing import TYPE_CHECKING
+
+	if TYPE_CHECKING:
+		from erpnext.stock.doctype.material_request_item.material_request_item import MaterialRequestItem
+		from frappe.types import DF
+
+		amended_from: DF.Link | None
+		award_contract: DF.Attach | None
+		company: DF.Link
+		customer: DF.Link | None
+		date_award_received: DF.Date | None
+		delivery_location: DF.Data | None
+		department: DF.Link
+		deputy_general_manager_comments: DF.SmallText | None
+		engineers_estimate: DF.Attach | None
+		evaluation_report: DF.Attach | None
+		installation_required: DF.Literal["", "Yes", "No", "Not Applicable"]
+		items: DF.Table[MaterialRequestItem]
+		job_card: DF.Link | None
+		justification: DF.SmallText | None
+		letter_head: DF.Link | None
+		# line_item_number: DF.Link | None
+		material_request_type: DF.Literal["Purchase", "Material Transfer", "Material Issue", "Manufacture", "Customer Provided"]
+		method_of_procurement: DF.Literal["", "Sole Sourcing", "Request for Quotation", "Open Tendered", "Restricted Tendered"]
+		naming_series: DF.Literal["REQ-SR-.YYYY.-.####.", "REQ-PR-.YYYY.-.####."]
+		notice_of_award: DF.Attach | None
+		per_ordered: DF.Percent
+		per_received: DF.Percent
+		preferred_delivery_date: DF.Date | None
+		procurement_categories: DF.Literal["", "Goods", "Services", "Consultancy"]
+		scan_barcode: DF.Data | None
+		scanned_pr: DF.Attach | None
+		schedule_date: DF.Date | None
+		select_print_heading: DF.Link | None
+		set_from_warehouse: DF.Link | None
+		set_warehouse: DF.Link | None
+		status: DF.Literal["", "Draft", "Submitted", "Stopped", "Cancelled", "Pending", "Partially Ordered", "Partially Received", "Ordered", "Issued", "Transferred", "Received"]
+		tc_name: DF.Link | None
+		technical_specification: DF.Attach | None
+		terms: DF.TextEditor | None
+		title: DF.Data | None
+		total: DF.Float
+		transaction_date: DF.Date
+		transfer_status: DF.Literal["", "Not Started", "In Transit", "Completed"]
+		warranty: DF.Literal["", "Yes", "No", "Not Applicable"]
+		work_order: DF.Link | None
+	# end: auto-generated types
 
 	def check_if_already_pulled(self):
 		pass
@@ -118,7 +166,7 @@ class MaterialRequest(BuyingController):
 		"""Set title as comma separated list of items"""
 		if not self.title:
 			items = ", ".join([d.item_name for d in self.items][:3])
-			self.title = _("{0} Request for {1}").format(self.material_request_type, items)[:100]
+			self.title = _("{0} Request for {1}").format(_(self.material_request_type), items)[:100]
 
 	def on_submit(self):
 		self.update_requested_qty_in_production_plan()
@@ -223,13 +271,12 @@ class MaterialRequest(BuyingController):
 		mr_qty_allowance = frappe.db.get_single_value("Stock Settings", "mr_qty_allowance")
 
 		for d in self.get("items"):
-			precision = d.precision("ordered_qty")
 			if d.name in mr_items:
 				if self.material_request_type in ("Material Issue", "Material Transfer", "Customer Provided"):
 					d.ordered_qty = flt(mr_items_ordered_qty.get(d.name))
 
 					if mr_qty_allowance:
-						allowed_qty = flt((d.qty + (d.qty * (mr_qty_allowance / 100))), precision)
+						allowed_qty = flt((d.qty + (d.qty * (mr_qty_allowance / 100))), d.precision("ordered_qty"))
 
 						if d.ordered_qty and d.ordered_qty > allowed_qty:
 							frappe.throw(
@@ -238,11 +285,11 @@ class MaterialRequest(BuyingController):
 								).format(d.ordered_qty, d.parent, allowed_qty, d.item_code)
 							)
 
-					elif d.ordered_qty and flt(d.ordered_qty, precision) > flt(d.stock_qty, precision):
+					elif d.ordered_qty and d.ordered_qty > d.stock_qty:
 						frappe.throw(
 							_(
 								"The total Issue / Transfer quantity {0} in Material Request {1} cannot be greater than requested quantity {2} for Item {3}"
-							).format(d.ordered_qty, d.parent, d.stock_qty, d.item_code)
+							).format(d.ordered_qty, d.parent, d.qty, d.item_code)
 						)
 
 				elif self.material_request_type == "Manufacture":
@@ -405,6 +452,7 @@ def make_purchase_order(source_name, target_doc=None, args=None):
 					["uom", "uom"],
 					["sales_order", "sales_order"],
 					["sales_order_item", "sales_order_item"],
+					["wip_composite_asset", "wip_composite_asset"],
 				],
 				"postprocess": update_item,
 				"condition": select_item,
