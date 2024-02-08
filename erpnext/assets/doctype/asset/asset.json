@@ -554,7 +554,7 @@
    "table_fieldname": "accounts"
   }
  ],
- "modified": "2024-01-02 13:23:22.124371",
+ "modified": "2024-02-07 20:51:16.025248",
  "modified_by": "Administrator",
  "module": "Assets",
  "name": "Asset",
@@ -587,6 +587,21 @@
    "read": 1,
    "report": 1,
    "role": "Quality Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Secretary",
    "share": 1,
    "submit": 1,
    "write": 1

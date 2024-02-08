@@ -11,6 +11,7 @@
   "states": [
    {
     "allow_edit": "Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -24,6 +25,7 @@
    },
    {
     "allow_edit": "HOD",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -37,6 +39,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -50,6 +53,7 @@
    },
    {
     "allow_edit": "Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -63,6 +67,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -158,6 +163,7 @@
   "states": [
    {
     "allow_edit": "Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -171,6 +177,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -184,6 +191,7 @@
    },
    {
     "allow_edit": "Secretary",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -235,6 +243,7 @@
   "states": [
    {
     "allow_edit": "Secretary",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -248,6 +257,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -261,6 +271,7 @@
    },
    {
     "allow_edit": "HOD",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -274,6 +285,7 @@
    },
    {
     "allow_edit": "Employee",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -336,6 +348,7 @@
   "states": [
    {
     "allow_edit": "Department Staff",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -349,6 +362,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -362,6 +376,7 @@
    },
    {
     "allow_edit": "Maintenance User",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -375,6 +390,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -388,6 +404,7 @@
    },
    {
     "allow_edit": "Faculty Office",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -401,6 +418,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -414,6 +432,7 @@
    },
    {
     "allow_edit": "Internal Auditor",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -427,6 +446,7 @@
    },
    {
     "allow_edit": "HOD",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -440,6 +460,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -453,6 +474,7 @@
    },
    {
     "allow_edit": "Maintenance User",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -466,6 +488,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -479,6 +502,7 @@
    },
    {
     "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -492,6 +516,7 @@
    },
    {
     "allow_edit": "Internal Auditor",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -505,6 +530,7 @@
    },
    {
     "allow_edit": "Internal Auditor",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,

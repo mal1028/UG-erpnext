@@ -910,7 +910,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-02-01 21:42:13.595447",
+ "modified": "2024-02-07 20:38:10.438584",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
@@ -986,13 +986,9 @@
    "write": 1
   },
   {
-   "email": 1,
-   "export": 1,
-   "print": 1,
+   "read": 1,
    "report": 1,
-   "role": "Secretary",
-   "select": 1,
-   "share": 1
+   "role": "Secretary"
   }
  ],
  "quick_entry": 1,

@@ -289,7 +289,7 @@
    "fieldname": "set_from_warehouse",
    "fieldtype": "Link",
    "label": "Set Source Warehouse",
-   "options": "Warehouse",
+"options": "Warehouse",
    "read_only": 1
   },
   {
@@ -382,7 +382,7 @@
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-06 19:56:31.270179",
+ "modified": "2024-02-07 22:56:59.693188",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
@@ -449,10 +449,11 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,

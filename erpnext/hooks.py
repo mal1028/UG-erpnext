@@ -644,7 +644,17 @@ fixtures = [
     
     'Translation',
     'Warehouse',
+    'Custom DocPerm',
     
+{
+        "doctype": "User",
+        "filters": {
+            "name": [
+                "in",
+                "secretary@test.com, admin@test.com",
+            ]
+        },
+    },
     {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},
     
 	{
@@ -695,15 +705,7 @@ fixtures = [
                   ]
         },
     },
-     {
-        "doctype": "Custom DocPerm",
-        "filters": {
-            "name": [
-                "in",
-                "Faculty Office, Internal Auditor, Maintenance User, Department Staff, Employee, Admin Officer, HOD, Secretary"
-                  ]
-        },
-    },
+
          {
         "doctype": "Workflow Action Master",
         "filters": {

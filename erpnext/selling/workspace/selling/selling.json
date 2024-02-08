@@ -14,7 +14,7 @@
  "hide_custom": 0,
  "icon": "sell",
  "idx": 0,
- "is_hidden": 1,
+ "is_hidden": 0,
  "label": "Selling",
  "links": [
   {
@@ -621,7 +621,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-01-02 12:14:18.894531",
+ "modified": "2024-02-07 21:27:54.360878",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Selling",
