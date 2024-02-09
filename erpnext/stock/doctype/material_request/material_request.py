@@ -47,7 +47,7 @@ class MaterialRequest(BuyingController):
 		job_card: DF.Link | None
 		justification: DF.SmallText | None
 		letter_head: DF.Link | None
-		# line_item_number: DF.Link | None
+		line_item_number: DF.Link | None
 		material_request_type: DF.Literal["Purchase", "Material Transfer", "Material Issue", "Manufacture", "Customer Provided"]
 		method_of_procurement: DF.Literal["", "Sole Sourcing", "Request for Quotation", "Open Tendered", "Restricted Tendered"]
 		naming_series: DF.Literal["REQ-SR-.YYYY.-.####.", "REQ-PR-.YYYY.-.####."]
@@ -62,7 +62,7 @@ class MaterialRequest(BuyingController):
 		select_print_heading: DF.Link | None
 		set_from_warehouse: DF.Link | None
 		set_warehouse: DF.Link | None
-		status: DF.Literal["", "Draft", "Pending", "Endorsed", "Stock Issued"]
+		status: DF.Literal["", "Draft", "Submitted", "Stopped", "Cancelled", "Pending", "Partially Ordered", "Partially Received", "Ordered", "Issued", "Transferred", "Received"]
 		tc_name: DF.Link | None
 		technical_specification: DF.Attach | None
 		terms: DF.TextEditor | None
@@ -131,9 +131,15 @@ class MaterialRequest(BuyingController):
 			self.status,
 			[
 				"Draft",
+				"Submitted",
+				"Stopped",
+				"Cancelled",
 				"Pending",
-				"Endorsed",
-				"Stock Issued",
+				"Partially Ordered",
+				"Ordered",
+				"Issued",
+				"Transferred",
+				"Received",
 			],
 		)
 

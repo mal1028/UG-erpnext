@@ -132,7 +132,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-08 10:11:50.474608",
+ "modified": "2024-02-09 10:13:13.673296",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Inventory",
@@ -171,7 +171,7 @@
    "role": "Faculty Office"
   }
  ],
- "sequence_id": 1.0,
+ "sequence_id": 2.0,
  "shortcuts": [
   {
    "color": "Grey",

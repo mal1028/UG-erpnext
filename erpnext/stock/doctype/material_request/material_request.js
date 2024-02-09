@@ -581,3 +581,20 @@ frappe.ui.form.on('Material Request', {
     }
 	
 });
+frappe.ui.form.on("Material Request", {
+
+    refresh: function (frm) {
+        frappe.db
+            .get_value(
+                "Employee",
+                { user_id: frappe.session.user },
+                "department"
+            ).then((r) => {
+                let values = r.message;
+                // console.log(values.department);
+                if (values.department){
+                    frm.set_value('department', values.department);
+                }
+			});
+		}
+        });
