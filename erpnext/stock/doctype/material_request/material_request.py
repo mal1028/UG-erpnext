@@ -62,7 +62,7 @@ class MaterialRequest(BuyingController):
 		select_print_heading: DF.Link | None
 		set_from_warehouse: DF.Link | None
 		set_warehouse: DF.Link | None
-		status: DF.Literal["", "Draft", "Submitted", "Stopped", "Cancelled", "Pending", "Partially Ordered", "Partially Received", "Ordered", "Issued", "Transferred", "Received"]
+		status: DF.Literal["", "Draft", "Pending", "Endorsed", "Stock Issued"]
 		tc_name: DF.Link | None
 		technical_specification: DF.Attach | None
 		terms: DF.TextEditor | None
@@ -131,15 +131,9 @@ class MaterialRequest(BuyingController):
 			self.status,
 			[
 				"Draft",
-				"Submitted",
-				"Stopped",
-				"Cancelled",
 				"Pending",
-				"Partially Ordered",
-				"Ordered",
-				"Issued",
-				"Transferred",
-				"Received",
+				"Endorsed",
+				"Stock Issued",
 			],
 		)
 

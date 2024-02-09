@@ -610,8 +610,8 @@ body[data-route="pos"] {
     font-size: var(--text-tiny);
 }
 .std-form-layout > .form-layout > .form-page {
-	margin-left: -231px !important;
+	margin-left: 10px !important;
 	border-radius: var(--border-radius-md) !important;
-    box-shadow: var(--card-shadow) !important;
-    background-color: var(--card-bg) !important;
-} 
+	box-shadow: var(--card-shadow) !important;
+	background-color: var(--card-bg) !important;
+  }
