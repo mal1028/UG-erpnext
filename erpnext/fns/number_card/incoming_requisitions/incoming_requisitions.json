@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "color": "#761ACB",
+ "color": "#000000",
  "creation": "2024-01-09 22:32:39.760235",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Incoming Requisitions",
- "modified": "2024-02-07 23:09:20.196102",
+ "modified": "2024-02-11 02:04:10.740457",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "Incoming Requisitions",

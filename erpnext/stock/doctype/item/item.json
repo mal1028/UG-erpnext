@@ -4,7 +4,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:item_code",
- "creation": "2013-05-03 10:45:46",
+ "creation": "2024-02-10 01:45:00.180946",
  "description": "A Product or a Service that is bought, sold or kept in stock.",
  "doctype": "DocType",
  "document_type": "Setup",
@@ -16,13 +16,15 @@
   "item_code",
   "item_name",
   "item_group",
+  "meta1",
   "stock_uom",
+  "owner_ug",
+  "comments",
   "column_break0",
   "disabled",
   "allow_alternative_item",
   "is_stock_item",
   "has_variants",
-  "include_item_in_manufacturing",
   "opening_stock",
   "valuation_rate",
   "standard_rate",
@@ -34,6 +36,8 @@
   "over_delivery_receipt_allowance",
   "over_billing_allowance",
   "image",
+  "priority",
+  "reorder_level",
   "section_break_11",
   "description",
   "brand",
@@ -112,13 +116,13 @@
   "condition",
   "inspection_required_before_delivery",
   "manufacturing",
+  "include_item_in_manufacturing",
   "is_sub_contracted_item",
   "default_bom",
   "column_break_74",
   "customer_code",
   "default_item_manufacturer",
   "default_manufacturer_part_no",
-  "published_in_website",
   "total_projected_qty"
  ],
  "fields": [
@@ -133,11 +137,11 @@
    "bold": 1,
    "fieldname": "item_code",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_global_search": 1,
    "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Data",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -238,7 +242,6 @@
    "depends_on": "eval:doc.__islocal",
    "fieldname": "standard_rate",
    "fieldtype": "Currency",
-   "hidden": 1,
    "label": "Standard Selling Rate"
   },
   {
@@ -335,7 +338,7 @@
    "fieldname": "default_material_request_type",
    "fieldtype": "Select",
    "label": "Default Material Request Type",
-   "options": "\nPurchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided"
+   "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided"
   },
   {
    "depends_on": "is_stock_item",
@@ -507,7 +510,7 @@
    "fieldtype": "Table",
    "hidden": 1,
    "label": "Variant Attributes",
-   "mandatory_depends_on": "has_variants",
+   "mandatory_depends_on": "eval:(doc.has_variants || doc.variant_of) && doc.variant_based_on==='Item Attribute'",
    "options": "Item Variant Attribute"
   },
   {
@@ -629,7 +632,6 @@
    "collapsible": 1,
    "fieldname": "sales_details",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Sales",
    "oldfieldtype": "Section Break",
    "options": "fa fa-tag"
@@ -701,7 +703,6 @@
    "collapsible_depends_on": "taxes",
    "fieldname": "item_tax_section_break",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Tax",
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
@@ -741,7 +742,6 @@
    "depends_on": "is_stock_item",
    "fieldname": "manufacturing",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Manufacturing",
    "oldfieldtype": "Section Break",
    "options": "fa fa-cogs"
@@ -821,14 +821,6 @@
    "read_only": 1
   },
   {
-   "default": "0",
-   "depends_on": "published_in_website",
-   "fieldname": "published_in_website",
-   "fieldtype": "Check",
-   "label": "Published in Website",
-   "read_only": 1
-  },
-  {
    "default": "1",
    "fieldname": "grant_commission",
    "fieldtype": "Check",
@@ -855,7 +847,6 @@
   {
    "fieldname": "purchasing_tab",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Purchasing"
   },
   {
@@ -880,7 +871,6 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "accounting",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Accounting"
   },
   {
@@ -898,6 +888,32 @@
    "label": "Deferred Accounting"
   },
   {
+   "fieldname": "meta1",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "meta1"
+  },
+  {
+   "fieldname": "owner_ug",
+   "fieldtype": "Data",
+   "label": "Owner (UG)"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Data",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "reorder_level",
+   "fieldtype": "Int",
+   "label": "Reorder Level"
+  },
+  {
    "fieldname": "condition",
    "fieldtype": "Select",
    "label": "Condition",
@@ -910,7 +926,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-02-07 20:38:10.438584",
+ "modified": "2024-02-10 01:45:00.180946",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
