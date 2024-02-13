@@ -569,6 +569,21 @@ body[data-route="pos"] {background: linear-gradient(to bottom, #1547349c, #fffff
 	.standard-sidebar-item.selected .sidebar-item-label{
 		color: #f1ede3 !important;
 	}
+	.sidebar-item-label {
+		color: #ffffff
+	}
+	.layout-side-section .sidebar-label {
+		margin-bottom: var(--margin-sm);
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		color: #ffffff !important;
+		letter-spacing: 0.04rem;
+		font-size: var(--text-sm);
+	}
+	.text-muted, div#driver-popover-item .driver-popover-footer button.driver-close-btn {
+		color: #000000 !important;
+	}
 		
 	.selected {
 		--icon-stroke: #FFFFFF !important;
@@ -600,6 +615,9 @@ body[data-route="pos"] {background: linear-gradient(to bottom, #1547349c, #fffff
 .page-title {
 
     align-items: center;
+}
+.page-title .title-area .title-text {
+    color: #ffffff !important;
 }
 .widget.number-widget-box .widget-head .widget-title {
     font-weight: 500;
