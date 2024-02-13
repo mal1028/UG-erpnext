@@ -641,32 +641,31 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
-    
+    'Custom DocPerm',
     'Translation',
     'Warehouse',
-    'Custom DocPerm',
     
-    {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},
+    
+     {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},
     
 	{
         "doctype": "Web Page",
         "filters": {
             "name": [
                 "in",
-                "home-page, contact-us",
+                "home-page, contact-us"
             ]
-        },
+        }
     },
-
-{
-    "doctype": "Department",
+    {
+        "doctype": "Department",
         "filters": {
             "name": [
                 "in",
                 "Department of Biology, Department of Chemistry, Department of Computer Science, Department of Maths Physics & Statistics, Center for Study of Biological Diversity, Faculty Office"
-                ]
-        },
-        },
+            ]
+        }
+    },
 
     {
         "doctype": "Workflow",
@@ -674,17 +673,16 @@ fixtures = [
             "name": [
                 "in",
                 "Internal Requisition WF, Stock Entry WF, Asset Movement WF, Asset Repair WF"
-                ]
-        },
+            ]
+        }
     },
-     {
+    {
         "doctype": "Workflow State",
         "filters": {
             "name": [
                 "in",
                 "Endorsed, Discarded, Dismantle & Storage, Not Working, Stock approved for repairs, Stock needed for repairs, Verified by Admin Officer, Repair Completed, Repair in progress, Submitted to Faculty Office, Verified, Stock Issued, Draft, Awaiting Verification, Out of Stock, Pending, Returned"		
-]
-
+			]
 		}
 	 },
      {
@@ -693,8 +691,8 @@ fixtures = [
             "name": [
                 "in",
                 "Faculty Office, Internal Auditor, Maintenance User, Department Staff, Employee, Admin Officer, HOD, Secretary"
-                  ]
-        },
+            ]
+        }
     },
 
          {
@@ -703,18 +701,17 @@ fixtures = [
             "name": [
                 "in",
                 "Submit to HOD, Discard, Dismantle & Storage, Not Working, Working, Fix internally, Submit to faculty office, Send to Maintenance, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify, Return"
-                  ]
-        },
+            ]
+        }
     },
-      
     {
         "doctype": "Fiscal Year",
         "filters": {
             "name": [
                 "in",
                 "2024"
-                  ]
-        },
+            ]
+        }
     },
   
 ]
