@@ -258,7 +258,7 @@
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2024-02-12 20:50:25.772143",
+ "modified": "2024-02-13 22:22:09.640114",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse",
@@ -327,6 +327,25 @@
    "read": 1,
    "report": 1,
    "role": "Faculty Office",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Officer"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
    "share": 1,
    "write": 1
   }

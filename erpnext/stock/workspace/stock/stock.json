@@ -5,7 +5,7 @@
    "label": "Warehouse wise Stock Value"
   }
  ],
- "content": "[{\"id\":\"V7uM54EdD4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h1\\\">Faculty of Natural Science</span><b></b>\",\"col\":12}},{\"id\":\"IRxDyxpOc_\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Stock Value\",\"col\":3}},{\"id\":\"anPAFE-jWM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":3}},{\"id\":\"UrPY2YUX-5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending IRs for Faculty Office\",\"col\":3}},{\"id\":\"1-t6nLdTIY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":3}},{\"id\":\"TZ1h8004i4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"D5o-ogSa-Z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"cAhHD48y2t\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"dpFmEj8YIZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"R9-RSbcech\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"LfT6FWhajp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"df3JYAqFoR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"_D5I0KjtRu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ledger\",\"col\":3}},{\"id\":\"UqD7G3zi3L\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"r27eEanC2j\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"ReQ7UUJ8JQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"8Ql3CCu2GR\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\",\"col\":12}},{\"id\":\"jAQfbbDzrq\",\"type\":\"card\",\"data\":{\"card_name\":\"Items and Pricing\",\"col\":4}},{\"id\":\"WVZEF4808O\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Transactions\",\"col\":4}},{\"id\":\"hW960r4j8z\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"kIwJ09Oo5R\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"N9sevGJibZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Serial No and Batch\",\"col\":4}},{\"id\":\"UysQlck3cM\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"id\":\"utKFEH5w6u\",\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"id\":\"OopltG99ZS\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}},{\"id\":\"3dVlYcODUZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Useful Links\",\"col\":4}}]",
+ "content": "[{\"id\":\"V7uM54EdD4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h1\\\">Faculty of Natural Science</span><b></b>\",\"col\":12}},{\"id\":\"1-t6nLdTIY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Items\",\"col\":4}},{\"id\":\"anPAFE-jWM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Warehouses\",\"col\":4}},{\"id\":\"IRxDyxpOc_\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Stock Value\",\"col\":4}},{\"id\":\"TZ1h8004i4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Warehouse wise Stock Value\",\"col\":12}},{\"id\":\"D5o-ogSa-Z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"cAhHD48y2t\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access</b></span>\",\"col\":12}},{\"id\":\"dpFmEj8YIZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"R9-RSbcech\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internal Requisition\",\"col\":3}},{\"id\":\"LfT6FWhajp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"id\":\"df3JYAqFoR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"_D5I0KjtRu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ledger\",\"col\":3}},{\"id\":\"UqD7G3zi3L\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement\",\"col\":3}},{\"id\":\"r27eEanC2j\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Register\",\"col\":3}},{\"id\":\"B_ZSLeEi3l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Repair\",\"col\":3}},{\"id\":\"ReQ7UUJ8JQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"8Ql3CCu2GR\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\",\"col\":12}},{\"id\":\"jAQfbbDzrq\",\"type\":\"card\",\"data\":{\"card_name\":\"Items and Pricing\",\"col\":4}},{\"id\":\"WVZEF4808O\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Transactions\",\"col\":4}},{\"id\":\"hW960r4j8z\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"id\":\"kIwJ09Oo5R\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"N9sevGJibZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Serial No and Batch\",\"col\":4}},{\"id\":\"UysQlck3cM\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"id\":\"utKFEH5w6u\",\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"id\":\"OopltG99ZS\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}},{\"id\":\"3dVlYcODUZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Useful Links\",\"col\":4}}]",
  "creation": "2020-03-02 15:43:10.096528",
  "custom_blocks": [],
  "docstatus": 0,
@@ -748,15 +748,11 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-10 00:17:32.623576",
+ "modified": "2024-02-14 00:40:30.987343",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock",
  "number_cards": [
-  {
-   "label": "Pending IRs for Faculty Office",
-   "number_card_name": "Incoming Requisitions"
-  },
   {
    "label": "Total Stock Value",
    "number_card_name": "Total Stock Value"
@@ -784,6 +780,14 @@
    "label": "Internal Requisition",
    "link_to": "Material Request",
    "stats_filter": "[[\"Material Request\",\"company\",\"like\",\"%University of Guyana%\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "New",
+   "label": "Asset Repair",
+   "link_to": "Asset Repair",
+   "stats_filter": "[]",
    "type": "DocType"
   },
   {

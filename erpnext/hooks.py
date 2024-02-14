@@ -641,9 +641,10 @@ extend_bootinfo = [
 	"erpnext.support.doctype.service_level_agreement.service_level_agreement.add_sla_doctypes",
 ]
 fixtures = [
-    'Custom DocPerm',
+    "Custom DocPerm",
     'Translation',
     'Warehouse',
+	'Notification',
     
     
      {"doctype": "Website Settings", "filters": {"name": ["in", "App Name"]}},

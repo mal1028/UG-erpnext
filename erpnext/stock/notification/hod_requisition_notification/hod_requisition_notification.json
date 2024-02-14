@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2024-02-13 23:22:59.412022",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Material Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Internal Requisition</h3>\r\n\r\n<p>Internal Requisition {{ doc.name }} has been submitted to you. Please take necessary action.</p>\r\n",
+ "modified": "2024-02-13 23:22:59.412022",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "HOD Requisition notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state =='Pending'",
+   "receiver_by_role": "HOD"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Ur Ims",
+ "sender_email": "UR-IMS@notifications.com",
+ "subject": "{{ doc.name }} to be endorsed",
+ "value_changed": "workflow_state"
+}

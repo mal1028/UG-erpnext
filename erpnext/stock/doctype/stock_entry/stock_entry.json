@@ -51,6 +51,7 @@
   "scan_barcode",
   "items_section",
   "items",
+  "department",
   "get_stock_and_rate",
   "section_break_19",
   "total_outgoing_value",
@@ -85,6 +86,14 @@
   "is_return"
  ],
  "fields": [
+    {
+        "fieldname": "department",
+        "fieldtype": "Link",
+        "in_list_view": 1,
+        "label": "Department",
+        "options": "Department",
+        "reqd": 1
+       },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
@@ -680,7 +689,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-07 20:49:46.523786",
+ "modified": "2024-02-14 00:51:37.191453",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",
@@ -759,6 +768,43 @@
    "role": "Secretary",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Officer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Faculty Office",
+   "share": 1,
    "write": 1
   }
  ],
