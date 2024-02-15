@@ -194,6 +194,7 @@
    "fieldname": "department",
    "fieldtype": "Link",
    "label": "Department",
+   "read_only": 1,
    "options": "Department"
   },
   {
@@ -220,6 +221,7 @@
    "read_only": 1
   },
   {
+    "depends_on": "eval:!(doc.is_composite_asset && !doc.capitalized_in)", 
    "fieldname": "gross_purchase_amount",
    "fieldtype": "Currency",
    "label": "Gross Purchase Amount",
@@ -410,6 +412,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:!doc.is_composite_asset && !doc.is_existing_asset",
    "fieldname": "purchase_receipt",
    "fieldtype": "Link",
    "label": "Purchase Receipt",
@@ -427,6 +430,8 @@
    "read_only": 1
   },
   {
+
+   "depends_on": "eval:!doc.is_composite_asset && !doc.is_existing_asset",
    "fieldname": "purchase_invoice",
    "fieldtype": "Link",
    "label": "Purchase Invoice",

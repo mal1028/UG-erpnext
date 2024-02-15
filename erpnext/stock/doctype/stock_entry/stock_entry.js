@@ -1172,8 +1172,8 @@ function check_should_not_attach_bom_items(bom_no) {
 extend_cscript(cur_frm.cscript, new erpnext.stock.StockEntry({frm: cur_frm}));
 
 frappe.ui.form.on('Stock Entry', {
-
-    refresh: function (frm) {
+	refresh: function (frm) {
+	if (frm.is_new()) {    
         frappe.db
             .get_value(
                 "Employee",
@@ -1186,5 +1186,6 @@ frappe.ui.form.on('Stock Entry', {
                     frm.set_value("department", values.department);
                 }
 			});
+		}
 		}
         });

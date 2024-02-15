@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Faculty Dashboard</b></span>\",\"col\":12}},{\"id\":\"8QtZrWYUbN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inventory Dashboard\",\"col\":3}},{\"id\":\"d_KVM1gsf9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"_9S3SC5JJR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending IRs for Faculty Office\",\"col\":4}}]",
+ "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Faculty Dashboard</b></span>\",\"col\":12}},{\"id\":\"8QtZrWYUbN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inventory Dashboard\",\"col\":3}},{\"id\":\"NwaYYciB98\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Ageing\",\"col\":3}},{\"id\":\"d_KVM1gsf9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"_9S3SC5JJR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending IRs for Faculty Office\",\"col\":4}}]",
  "creation": "2020-01-23 13:46:38.833076",
  "custom_blocks": [],
  "docstatus": 0,
@@ -200,7 +200,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-14 00:33:56.024423",
+ "modified": "2024-02-14 23:06:12.906955",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Home",
@@ -218,6 +218,13 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Ageing",
+   "link_to": "Stock Ageing",
+   "type": "Report"
+  },
   {
    "color": "Grey",
    "doc_view": "List",

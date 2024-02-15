@@ -156,7 +156,7 @@
   "doctype": "Workflow",
   "document_type": "Stock Entry",
   "is_active": 1,
-  "modified": "2024-01-05 13:52:30.754003",
+  "modified": "2024-02-15 00:13:20.298319",
   "name": "Stock Entry WF",
   "override_status": 0,
   "send_email_alert": 1,
@@ -192,6 +192,20 @@
    {
     "allow_edit": "Secretary",
     "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Stock Entry WF",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Admin Officer",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -226,6 +240,28 @@
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Awaiting Verification"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Admin Officer",
+    "condition": null,
+    "next_state": "Rejected",
+    "parent": "Stock Entry WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Awaiting Verification"
+   },
+   {
+    "action": "Submit for verification",
+    "allow_self_approval": 1,
+    "allowed": "Secretary",
+    "condition": null,
+    "next_state": "Awaiting Verification",
+    "parent": "Stock Entry WF",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Rejected"
    }
   ],
   "workflow_name": "Stock Entry WF",
