@@ -142,7 +142,7 @@
  ],
  "is_tree": 1,
  "links": [],
- "modified": "2023-08-29 12:49:33.290527",
+ "modified": "2024-02-15 22:07:32.283648",
  "modified_by": "Administrator",
  "module": "Assets",
  "name": "Location",
@@ -217,6 +217,54 @@
    "read": 1,
    "report": 1,
    "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Secretary",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Officer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Faculty Office",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
    "share": 1,
    "write": 1
   }

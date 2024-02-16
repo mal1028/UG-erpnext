@@ -11,7 +11,8 @@
   "quantity_req",
   "uom",
   "issue",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -43,7 +44,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Quantity to Issue",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "remarks",
@@ -56,13 +58,23 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Item Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Faculty Items",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-01-03 10:34:27.639524",
+ "modified": "2024-02-15 23:19:48.067673",
  "modified_by": "Administrator",
  "module": "FNS",
  "name": "Faculty Items",

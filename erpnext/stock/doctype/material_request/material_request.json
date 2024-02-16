@@ -105,7 +105,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Purpose",
-   "options": "Material Transfer\nPurchase\nMaterial Issue",
+   "options": "Material Issue\nMaterial Transfer\nPurchase",
    "reqd": 1
   },
   {
@@ -202,7 +202,6 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_standard_filter": 1,
    "label": "Status",
    "no_copy": 1,
    "oldfieldname": "status",
@@ -386,13 +385,14 @@
    "fieldtype": "Column Break"
   },
   {
+   "read_only_depends_on": "eval:(doc.workflow_state != \"Endorsed\");",
    "fieldname": "faculty_items",
    "fieldtype": "Table",
    "label": "Quantity",
    "options": "Faculty Items"
   },
   {
-   "depends_on": "eval:doc.workflow_state=='Endorsed'",
+    "depends_on": "eval:(doc.workflow_state != \"Pending\" && doc.workflow_state != \"Draft\" && doc.workflow_state != \"Stock Issued\");",
    "fieldname": "faculty_button",
    "fieldtype": "Button",
    "label": "Click to Issue Items"
@@ -538,7 +538,7 @@
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-13 01:05:47.963823",
+ "modified": "2024-02-15 23:10:01.953940",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
