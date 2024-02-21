@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2024-02-21 11:00:41.758500",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Material Request",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear {{doc.full_name}},</p>\n\n<p>Your Internal Requisition {{doc.name}} has been submitted.</p>\n\n<p>It will be reviewed by the HOD and you will be notified as soon as the status updates. </p>\n\n<li><b>{{ _(\"Internal Requisition\") }}:</b> {{ frappe.utils.get_link_to_form(doc.doctype, doc.name) }}</li>",
+ "modified": "2024-02-21 11:00:41.758500",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "New IR",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Internal Requisition: {{ doc.name }}"
+}

@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == \"Stock Issued\"",
+ "creation": "2024-02-21 11:30:02.201950",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Material Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h2>Internal Requisition</h2>\n\nDear {{doc.full_name}}, <br> <br>\n<p>Items that you requested were just issued by faculty office. {{doc.name}}.</p>\n\n<p> Click on the link to login and add the items to your inventory.</p>\n\n<li><b>{{ _(\"Internal Requisition\") }}:</b> {{ frappe.utils.get_link_to_form(doc.doctype, doc.name) }}</li>",
+ "modified": "2024-02-21 11:30:02.201950",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Stock Issued IR",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Stock has been Issued for {{ doc.name }}",
+ "value_changed": "workflow_state"
+}

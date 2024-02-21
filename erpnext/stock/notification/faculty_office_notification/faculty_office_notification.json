@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == \"Endorsed\"",
+ "creation": "2024-02-21 11:25:32.612266",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Material Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h2>Internal Requisition</h2>\n\nDear Faculty, <br> <br>\n<p>Internal Requisition {{doc.name}} created by {{ doc.full_name }} of {{ doc.department }} is pending your approval.</p>\n\n<li><b>{{ _(\"Internal Requisition\") }}:</b> {{ frappe.utils.get_link_to_form(doc.doctype, doc.name) }}</li>",
+ "modified": "2024-02-21 11:25:32.612266",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Faculty Office Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Faculty Office"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Internal Requisition {{ doc.name }} is pending action",
+ "value_changed": "workflow_state"
+}

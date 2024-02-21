@@ -605,3 +605,29 @@ frappe.ui.form.on("Material Request", {
 			});
 		}
         });
+
+		frappe.ui.form.on("Material Request", {
+
+			refresh: function (frm) {
+			   if(frm.is_new()) {
+				frappe.db.get_value(
+					"Employee",
+					{ user_id: frappe.session.user },
+					"name"
+				).then((r) => {
+					let values = r.message;
+					
+					if (values.name){
+						frm.set_value('employee', values.name);
+					}
+		
+				 });
+				 frappe.db.get_value("Employee", { user_id: frappe.session.user }, "employee_name").then((r) => {
+					let fullNameValues = r.message;
+					if (fullNameValues.employee_name) {
+						frm.set_value('full_name', fullNameValues.employee_name);
+					}
+				});
+			}
+		}
+		});

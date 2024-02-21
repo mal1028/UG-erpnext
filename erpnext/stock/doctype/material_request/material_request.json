@@ -31,6 +31,9 @@
   "installation_required",
   "justification",
   "deputy_general_manager_comments",
+  "section_break_a",
+  "employee",
+  "full_name",
   "department",
   "column_break_aufr",
   "delivery_location",
@@ -89,6 +92,24 @@
    "reqd": 1,
    "set_only_once": 1
   },
+  {
+    "fieldname": "full_name",
+    "fieldtype": "Data",
+    "label": "Employee Name",
+    "read_only": 1
+   },
+   {
+    "fieldname": "employee",
+    "fieldtype": "Link",
+    "label": "Employee ID",
+    "options": "Employee",
+    "read_only": 1
+   },
+   {
+    "fieldname": "section_break_a", 
+    "fieldtype": "Section Break",
+    "label": "Employee Details"
+   },
   {
    "allow_on_submit": 1,
    "default": "{material_request_type}",
@@ -447,6 +468,7 @@
    "in_list_view": 1,
    "label": "Department",
    "options": "Department",
+   "read_only": 1,
    "reqd": 1
   },
   {

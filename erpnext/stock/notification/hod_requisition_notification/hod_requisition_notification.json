@@ -1,8 +1,8 @@
 {
  "attach_print": 0,
  "channel": "Email",
- "condition": "",
- "creation": "2024-02-13 23:22:59.412022",
+ "condition": "doc.workflow_state == \"Pending\"",
+ "creation": "2024-02-21 10:48:33.157899",
  "days_in_advance": 0,
  "docstatus": 0,
  "doctype": "Notification",
@@ -11,22 +11,21 @@
  "event": "Value Change",
  "idx": 0,
  "is_standard": 1,
- "message": "<h3>Internal Requisition</h3>\r\n\r\n<p>Internal Requisition {{ doc.name }} has been submitted to you. Please take necessary action.</p>\r\n",
- "modified": "2024-02-13 23:22:59.412022",
+ "message": "<h3>Internal Requisition</h3>\n\n<p>Internal Requisition {{ doc.name }} has been submitted by {{ doc.full_name }}. Please take necessary action.</p>\n\n<p> Click on the link to see more details</p>\n\n<li><b>{{ _(\"Internal Requisition\") }}:</b> {{ frappe.utils.get_link_to_form(doc.doctype, doc.name) }}</li>",
+ "modified": "2024-02-21 11:04:27.564421",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "HOD Requisition notification",
- "owner": "Administrator",
  "recipients": [
   {
-   "condition": "doc.workflow_state =='Pending'",
+   "condition": "",
    "receiver_by_role": "HOD"
   }
  ],
  "send_system_notification": 1,
  "send_to_all_assignees": 0,
- "sender": "Ur Ims",
- "sender_email": "UR-IMS@notifications.com",
+ "sender": "",
+ "sender_email": "",
  "subject": "{{ doc.name }} to be endorsed",
  "value_changed": "workflow_state"
 }

@@ -701,7 +701,7 @@ fixtures = [
         "filters": {
             "name": [
                 "in",
-                "Submit to HOD, Discard, Dismantle & Storage, Not Working, Working, Fix internally, Submit to faculty office, Send to Maintenance, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify, Return"
+                "Submit to HOD, Discard, Dismantle & Storage, Not Working, Working, Fix internally, Submit to faculty office, Send to Maintenance, Re-Draft, Endorse, Submit to HOD, Issue Stock, Submit for verification, Verify,Request Stock, Return"
             ]
         }
     },
